@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Empathetic AI Academy - Course Design Framework & Paid Course Drafts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2563EB; --ink:#0f172a; --body:#334155; --muted:#64748b;
+  --line:#e5e7eb; --bg:#ffffff; --soft:#f8fafc;
+  --c1:#8B5CF6; --c2:#EC4899; --c3:#14B8A6; --c4:#F59E0B; --free:#3B82F6; --bundle:#6366F1;
+  --input:#b45309; --inputbg:#fffbeb; --inputborder:#fcd34d;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--body);background:var(--bg);line-height:1.65;font-size:16px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+header.top{background:linear-gradient(180deg,#f8fafc, #ffffff);border-bottom:1px solid var(--line);padding:46px 0 34px}
+.badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);background:#eff6ff;border:1px solid #dbeafe;padding:6px 12px;border-radius:999px;margin-bottom:16px}
+h1{font-size:30px;line-height:1.2;color:var(--ink);font-weight:800;margin:0 0 10px}
+.lede{font-size:17px;color:var(--muted);max-width:640px}
+h2{font-size:24px;color:var(--ink);font-weight:800;margin:52px 0 6px;padding-top:14px}
+h3{font-size:19px;color:var(--ink);font-weight:700;margin:30px 0 6px}
+h4{font-size:16px;color:var(--ink);font-weight:700;margin:20px 0 4px}
+p{margin:10px 0}
+ul,ol{margin:10px 0;padding-left:22px}
+li{margin:5px 0}
+a{color:var(--blue)}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.card{border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:18px 0;background:#fff;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.rule{height:1px;background:var(--line);border:0;margin:14px 0}
+.pill{display:inline-block;font-size:12.5px;font-weight:600;padding:4px 11px;border-radius:999px;margin:3px 6px 3px 0}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--muted);margin:8px 0 4px}
+.meta b{color:var(--ink);font-weight:600}
+.input{background:var(--inputbg);border:1px solid var(--inputborder);border-left:4px solid var(--input);border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#7c4a06}
+.input b{color:var(--input)}
+.demo{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0;font-size:14.5px}
+.demo .q{color:var(--ink);font-weight:600}
+.prompt{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;background:#0f172a;color:#e2e8f0;border-radius:10px;padding:14px 16px;margin:12px 0;white-space:pre-wrap;line-height:1.55}
+.quiz{background:#f1f5f9;border-radius:10px;padding:14px 16px;margin:12px 0;font-size:14.5px}
+.quiz .a{color:#047857;font-weight:600}
+.toc{columns:2;column-gap:28px;font-size:15px;margin:14px 0}
+.toc a{display:block;padding:4px 0;text-decoration:none;color:var(--body)}
+.toc a:hover{color:var(--blue)}
+.chip{width:12px;height:12px;border-radius:3px;display:inline-block;vertical-align:middle;margin-right:8px}
+.anat{counter-reset:step;list-style:none;padding-left:0}
+.anat li{counter-increment:step;position:relative;padding:8px 0 8px 42px;border-bottom:1px dashed var(--line)}
+.anat li:before{content:counter(step);position:absolute;left:0;top:8px;width:26px;height:26px;background:var(--blue);color:#fff;border-radius:50%;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.small{font-size:13.5px;color:var(--muted)}
+footer{border-top:1px solid var(--line);margin-top:50px;padding:26px 0 60px;color:var(--muted);font-size:14px}
+@media(max-width:640px){.toc{columns:1}h1{font-size:25px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <span class="badge">Empathetic AI Academy &middot; Internal working draft</span>
+  <h1>Course design framework &amp; paid course drafts</h1>
+  <p class="lede">The reusable structure for every course, then a blueprint for each of the four paid courses. Anywhere you see a gold box, that is where your finance and tax expertise goes. Everything else I draft and build.</p>
+</div></header>
+
+<main class="wrap">
+
+<div class="card">
+  <span class="eyebrow">On this page</span>
+  <div class="toc">
+    <a href="#framework"><span class="chip" style="background:var(--blue)"></span>1. The framework (reusable)</a>
+    <a href="#anatomy"><span class="chip" style="background:var(--blue)"></span>2. Lesson anatomy</a>
+    <a href="#quiz"><span class="chip" style="background:var(--blue)"></span>3. Quizzes &amp; assessment</a>
+    <a href="#skeleton"><span class="chip" style="background:var(--blue)"></span>4. Course skeleton</a>
+    <a href="#c1"><span class="chip" style="background:var(--c1)"></span>Course 1 &middot; Microsoft 365 Copilot</a>
+    <a href="#c2"><span class="chip" style="background:var(--c2)"></span>Course 2 &middot; Prompting</a>
+    <a href="#c3"><span class="chip" style="background:var(--c3)"></span>Course 3 &middot; AI Agents</a>
+    <a href="#c4"><span class="chip" style="background:var(--c4)"></span>Course 4 &middot; Governance</a>
+    <a href="#next"><span class="chip" style="background:var(--muted)"></span>What I need from you</a>
+  </div>
+</div>
+
+<!-- ============ FRAMEWORK ============ -->
+<h2 id="framework">1. The framework, in one idea</h2>
+<p>Every course teaches a real finance, accounting or tax task, then has the learner do that task with AI, safely. We are not teaching AI theory. We are teaching a professional to finish real work faster and defend the result. That single idea is our difference from a generic AI course, and it is what an OpenAI Select Partner should sound like.</p>
+
+<p>I looked at how the two academies you named are built, so ours borrows what works and adds what they do not have.</p>
+<div class="card">
+  <h4>What OpenAI Academy does</h4>
+  <p class="small">Free and self paced. Built around real workplace tasks and hands on activities. A clear pathway (foundations, then applied, then agents and workflows). Short courses of roughly 60 to 90 minutes. Completion certificate.</p>
+  <h4>What Anthropic Academy does</h4>
+  <p class="small">Video lessons, hands on exercises, a knowledge check along the way, and a quiz at the end of each course. Organised into tracks. An official certificate you add to LinkedIn.</p>
+  <h4>What we add on top</h4>
+  <p class="small">A finance, accounting and tax lens on every example. Source traceability and professional judgement built into each lesson. An Australian regulatory frame. And a certificate people are proud to share, which we already built, with one click Add to LinkedIn.</p>
+</div>
+
+<h3>Six design principles we reuse everywhere</h3>
+<ol>
+  <li><b>Task first, not tool first.</b> Each lesson starts from a job the learner already does (a reconciliation, an email to a client, a board pack), then shows the AI way.</li>
+  <li><b>Short lessons.</b> 8 to 16 minutes each. A professional learns in the gaps of a working day, so nothing is longer than one coffee.</li>
+  <li><b>Show, then do.</b> Every concept is followed by a worked example and a short hands on exercise using a real template.</li>
+  <li><b>Always defensible.</b> Every lesson reinforces checking the output, keeping a source trail, and applying professional judgement. This is our brand.</li>
+  <li><b>Reusable assets.</b> Prompts, checklists and policy templates are built once and shared across courses, and learners download them to keep.</li>
+  <li><b>Prove it.</b> Knowledge checks during the course and a short quiz at the end, then the certificate. Learning that is measured, not just watched.</li>
+</ol>
+
+<!-- ============ ANATOMY ============ -->
+<h2 id="anatomy">2. The lesson anatomy</h2>
+<p>This is the repeatable shape of every lesson. It keeps the courses consistent, makes them fast to produce, and gives you an obvious place to add your expertise (steps 4 and 7).</p>
+<ol class="anat">
+  <li><b>Why this matters.</b> One or two lines on the real cost of doing it the old way.</li>
+  <li><b>What you will be able to do.</b> A single, concrete learning outcome.</li>
+  <li><b>The idea, in plain English.</b> The concept, no jargon.</li>
+  <li><b>In your firm.</b> A concrete finance, accounting or tax example. <span class="small">(Your input makes these real.)</span></li>
+  <li><b>Show me.</b> A short walkthrough: the exact steps, or a prompt and its output, with a screenshot.</li>
+  <li><b>Try it.</b> A hands on exercise with a supplied template, so the learner does it once themselves.</li>
+  <li><b>Watch out.</b> The common mistake, the risk, or the governance note. <span class="small">(Your professional judgement lives here.)</span></li>
+  <li><b>Takeaway.</b> One sentence they will remember.</li>
+</ol>
+
+<!-- ============ QUIZ ============ -->
+<h2 id="quiz">3. Quizzes and how we prove learning</h2>
+<p>Two layers, matching what the OpenAI and Anthropic academies do, kept light so professionals are not put off.</p>
+<h4>Knowledge checks (during the course)</h4>
+<p>2 to 3 questions at the end of each module. Low stakes, instant feedback, they can retry. The point is to make a concept stick, not to grade.</p>
+<h4>Final quiz (to earn the certificate)</h4>
+<p>8 to 10 questions at the end of the course. Pass mark 80 percent, unlimited attempts. Passing unlocks the certificate and the Add to LinkedIn button we already built.</p>
+<h4>Question styles we use</h4>
+<ul>
+  <li><b>Scenario.</b> "A client emails asking X. Which Copilot approach keeps the answer defensible?" This tests judgement, not memory, which suits your audience.</li>
+  <li><b>Best next step.</b> Given a half finished task, what would you do next.</li>
+  <li><b>Spot the risk.</b> Show an AI output and ask what a professional must check before sending.</li>
+</ul>
+<div class="input"><b>Your input, optional:</b> the pass mark (80 percent is my suggestion) and whether you want the certificate to require the final quiz, or just course completion. My recommendation is to require the quiz, it makes the certificate mean more when shared.</div>
+<p class="small">Build note for me, not for you: the Academy already has courses, lessons, login and certificates. I will add a small quiz component (knowledge checks plus a final quiz that unlocks the certificate) when we build the content in. No new tools needed.</p>
+
+<!-- ============ SKELETON ============ -->
+<h2 id="skeleton">4. The course skeleton</h2>
+<p>Every course follows the same outline, so once you know one, you know them all.</p>
+<div class="card">
+  <ol>
+    <li><b>Welcome</b> (2 min): who this is for, what you will be able to do, how long it takes.</li>
+    <li><b>Modules</b> (3 to 6): each module is a short intro, 2 to 4 lessons, then a knowledge check.</li>
+    <li><b>Practical task</b>: one real task the learner completes with AI, using their own firm's work.</li>
+    <li><b>Final quiz</b>: 8 to 10 questions, 80 percent to pass.</li>
+    <li><b>Wrap up and resources</b>: recap, plus downloadable prompt library, checklist and templates.</li>
+    <li><b>Certificate</b> and one click Add to LinkedIn.</li>
+  </ol>
+</div>
+<p>Now the four paid courses in that shape. I have written the full module and lesson plan for each, one lesson fully drafted per course so you can see the depth, plus the knowledge checks, the practical task and a sample of the final quiz. The gold boxes are for you.</p>
+
+<!-- ============ COURSE 1 ============ -->
+<h2 id="c1"><span class="chip" style="background:var(--c1);width:16px;height:16px"></span>Course 1 &middot; Microsoft 365 Copilot for Finance</h2>
+<div class="meta"><span><b>Level:</b> Beginner</span><span><b>Learning hours:</b> 3</span><span><b>Price:</b> A$590</span><span><b>Angle:</b> the tool most firms already have</span></div>
+<p>Who it is for: finance and accounting professionals whose firm has Microsoft 365, who want to get real work done in the apps they already use every day.</p>
+<p><b>By the end they can:</b> draft, summarise and analyse faster across Excel, Outlook, Teams, Word and PowerPoint; build reliable Copilot habits for real finance tasks; and avoid the mistakes that produce wrong numbers.</p>
+
+<h3>Module plan</h3>
+<div class="card">
+  <p><b>Module 1 &middot; Getting started with Copilot in a firm</b></p>
+  <ul>
+    <li>1.1 What Copilot is, and where it lives in Microsoft 365</li>
+    <li>1.2 The data boundary: what Copilot can and cannot see, and why that matters for client data</li>
+    <li>1.3 Your first Copilot task in five minutes</li>
+  </ul>
+  <p><b>Module 2 &middot; Copilot in Excel for finance</b> (the core module)</p>
+  <ul>
+    <li>2.1 Asking Excel questions in plain English</li>
+    <li>2.2 Building and explaining formulas</li>
+    <li>2.3 Analysis, trends and summaries on real data</li>
+    <li>2.4 A reconciliation, the Copilot way, with a human check</li>
+  </ul>
+  <p><b>Module 3 &middot; Copilot in Outlook and Teams</b></p>
+  <ul>
+    <li>3.1 Drafting and replying to client email in your voice</li>
+    <li>3.2 Summarising a long thread into decisions and actions</li>
+    <li>3.3 Meeting recaps and action items in Teams</li>
+  </ul>
+  <p><b>Module 4 &middot; Copilot in Word and PowerPoint</b></p>
+  <ul>
+    <li>4.1 Drafting reports, letters and engagement documents</li>
+    <li>4.2 Turning a document or spreadsheet into a client deck</li>
+  </ul>
+  <p><b>Module 5 &middot; Getting reliable results every time</b></p>
+  <ul>
+    <li>5.1 Why Copilot sometimes gets it wrong</li>
+    <li>5.2 Grounding, verifying and keeping a source trail</li>
+    <li>5.3 The pre send checklist</li>
+  </ul>
+</div>
+
+<h3>Sample fully drafted lesson &middot; 2.2 Building and explaining formulas</h3>
+<div class="card">
+  <p><span class="eyebrow">Why this matters</span><br>Most finance professionals lose time either writing a tricky formula or, worse, inheriting a spreadsheet full of formulas nobody can explain. Copilot does both jobs in seconds, if you ask well.</p>
+  <p><span class="eyebrow">What you will be able to do</span><br>Ask Copilot to write a formula from a plain description, and ask it to explain any formula you did not write, then verify both.</p>
+  <p><span class="eyebrow">The idea, in plain English</span><br>Copilot in Excel can turn a sentence into a formula, and a formula back into a sentence. You describe the result you want, or paste a formula and ask what it does. You stay the reviewer, it does the typing.</p>
+  <p><span class="eyebrow">In your firm</span></p>
+  <div class="input"><b>Your input:</b> one or two real formula tasks your team hits often. For example, a tiered commission, a prorated fee, a GST back calculation, or a rolling 12 month average. Give me the plain description and the correct formula, and I will build the walkthrough around a real example rather than a textbook one.</div>
+  <p><span class="eyebrow">Show me</span><br>You have a column of tax inclusive amounts in column B and need the GST component. Instead of recalling the formula, you ask:</p>
+  <div class="prompt">Write an Excel formula for cell C2 that returns the GST
+component of the tax inclusive amount in B2, assuming a
+10 percent GST rate. Explain it in one line.</div>
+  <p class="small">Copilot returns the formula and a one line explanation. You paste it, check one row by hand, then fill down. To go the other way, paste a formula and ask "Explain what this formula does and flag any cell it depends on."</p>
+  <p><span class="eyebrow">Try it</span><br>Open the supplied practice workbook. Use Copilot to (a) write a formula for the GST component, and (b) explain the pre built formula in cell E2. Check one row of each by hand.</p>
+  <p><span class="eyebrow">Watch out</span></p>
+  <div class="input"><b>Your input:</b> your professional view on the real risk here. Mine as a placeholder: Copilot can produce a formula that looks right and is subtly wrong (wrong cell range, an absolute reference it should not have). Never fill down until you have checked at least one row by hand, and never trust a formula on a live client file you have not spot checked. Please refine this in your own words.</div>
+  <p><span class="eyebrow">Takeaway</span><br>Copilot writes and explains formulas in seconds. You still own the check on at least one row.</p>
+</div>
+
+<h3>Knowledge check &middot; end of Module 2</h3>
+<div class="quiz">
+  <p><b>Q.</b> You ask Copilot to build a formula that sums last quarter's revenue. Before you fill it down 400 rows, what should you do?<br>
+  A. Trust it, Copilot is accurate &nbsp;&middot;&nbsp; <b>B. Check the result on at least one row by hand</b> &nbsp;&middot;&nbsp; C. Reword the prompt three times</p>
+  <p class="a">Answer: B. Copilot drafts, you verify. One hand checked row catches a wrong range.</p>
+</div>
+
+<h3>Practical task</h3>
+<p>Take one real weekly task in your own work (a reconciliation, a variance summary, or a client email with numbers). Complete it with Copilot end to end, verify it, and note the time saved. Learners submit a two line reflection, which also becomes social proof we can use later, with permission.</p>
+
+<h3>Final quiz &middot; sample question</h3>
+<div class="quiz">
+  <p><b>Q.</b> A partner forwards a 40 message email chain and asks "what did we agree with the client?" What is the most defensible Copilot approach?<br>
+  A. Ask Copilot to summarise, then send the summary straight to the partner<br>
+  <b>B. Ask Copilot to summarise the decisions and open items, then check them against the actual emails before replying</b><br>
+  C. Read all 40 emails, Copilot cannot help here</p>
+  <p class="a">Answer: B. Copilot does the first pass, you confirm against source before it leaves your desk.</p>
+</div>
+<div class="input"><b>Your input for Course 1:</b> (1) two or three real Excel tasks your team does often; (2) which Copilot licence tier your target firms have, so examples match what they can actually click; (3) your view on the top two Copilot mistakes you have seen in finance work, for the "watch out" notes.</div>
+
+<!-- ============ COURSE 2 ============ -->
+<h2 id="c2"><span class="chip" style="background:var(--c2);width:16px;height:16px"></span>Course 2 &middot; Prompting for Reliable, Auditable Answers</h2>
+<div class="meta"><span><b>Level:</b> Beginner</span><span><b>Learning hours:</b> 3</span><span><b>Price:</b> A$590</span><span><b>Angle:</b> Copilot and ChatGPT skills</span></div>
+<p>Who it is for: anyone who has used ChatGPT or Copilot and got an answer that was confident but not quite trustworthy, and needs outputs that stand up in regulated work.</p>
+<p><b>By the end they can:</b> write prompts that produce consistent, defensible answers; build source traceability into every output; and reuse a prompt library for common finance and tax tasks.</p>
+
+<h3>Module plan</h3>
+<div class="card">
+  <p><b>Module 1 &middot; The anatomy of a reliable prompt</b></p>
+  <ul>
+    <li>1.1 The five parts: role, task, context, format, constraints</li>
+    <li>1.2 From a vague ask to a precise one</li>
+    <li>1.3 Telling the model what "good" looks like</li>
+  </ul>
+  <p><b>Module 2 &middot; Giving the model the right context</b></p>
+  <ul>
+    <li>2.1 Grounding an answer in your own document or data</li>
+    <li>2.2 What to paste in, and what never to paste in (client data)</li>
+    <li>2.3 Handling long documents without losing accuracy</li>
+  </ul>
+  <p><b>Module 3 &middot; Source traceability and defensibility</b></p>
+  <ul>
+    <li>3.1 Asking for citations and a visible chain of reasoning</li>
+    <li>3.2 Making the model show its working so you can check it</li>
+    <li>3.3 When the model does not know: forcing honesty over invention</li>
+  </ul>
+  <p><b>Module 4 &middot; A reusable prompt library for finance and tax</b></p>
+  <ul>
+    <li>4.1 Anatomy of a saved, reusable prompt template</li>
+    <li>4.2 Ten starter templates for common firm tasks</li>
+  </ul>
+  <p><b>Module 5 &middot; Quality control</b></p>
+  <ul>
+    <li>5.1 The four checks before you trust an answer</li>
+    <li>5.2 Red flags that mean stop and verify</li>
+  </ul>
+</div>
+
+<h3>Sample fully drafted lesson &middot; 1.1 The five parts of a reliable prompt</h3>
+<div class="card">
+  <p><span class="eyebrow">Why this matters</span><br>The same question, asked two ways, gives two very different answers. In regulated work, "it depends how you ask" is a risk. A reliable prompt removes the guesswork.</p>
+  <p><span class="eyebrow">What you will be able to do</span><br>Structure any prompt into five parts so the answer comes back consistent, defensible and in the format you need.</p>
+  <p><span class="eyebrow">The idea, in plain English</span><br>A good prompt has five parts: <b>role</b> (who the model should act as), <b>task</b> (what to do), <b>context</b> (the facts and documents it needs), <b>format</b> (how you want the answer laid out), and <b>constraints</b> (the rules it must not break). Miss one and quality drops.</p>
+  <p><span class="eyebrow">In your firm</span></p>
+  <div class="input"><b>Your input:</b> one recurring question your team asks AI. For example summarising a new tax ruling, drafting a client explanation, or comparing two treatments. I will rebuild it live using the five parts.</div>
+  <p><span class="eyebrow">Show me</span><br>A weak prompt: "explain Division 7A". A reliable one:</p>
+  <div class="prompt">Role: You are a tax adviser writing for a small business client.
+Task: Explain in plain English what Division 7A means for a
+loan from their company to themselves.
+Context: The client is a sole director. Assume Australian tax law.
+Format: Four short paragraphs, no jargon, end with "what to do next".
+Constraints: If anything depends on facts you do not have, say so
+and list what you would need. Do not give a definitive figure.</div>
+  <p class="small">The second prompt returns a client ready, appropriately cautious answer. The first returns a generic essay.</p>
+  <div class="input"><b>Your input:</b> please sanity check the Division 7A example for accuracy, or swap it for a topic you would rather lead with. I want the flagship example in this course to be one you are completely happy to put your name to.</div>
+  <p><span class="eyebrow">Try it</span><br>Take the weak prompt in the workbook and rewrite it using all five parts. Compare the two answers side by side.</p>
+  <p><span class="eyebrow">Watch out</span><br>The <b>constraints</b> line is what keeps you safe. "If anything depends on facts you do not have, say so" is the single most valuable instruction in professional work, because it turns confident invention into an honest gap you can fill.</p>
+  <p><span class="eyebrow">Takeaway</span><br>Role, task, context, format, constraints. Five parts, every time, and the answer becomes something you can defend.</p>
+</div>
+
+<h3>Knowledge check &middot; end of Module 1</h3>
+<div class="quiz">
+  <p><b>Q.</b> Which part of a prompt most reduces the risk of a confident but wrong answer in professional work?<br>
+  A. Role &nbsp;&middot;&nbsp; B. Format &nbsp;&middot;&nbsp; <b>C. Constraints (for example, "say so if you are unsure")</b></p>
+  <p class="a">Answer: C. Constraints turn invention into an honest, fillable gap.</p>
+</div>
+
+<h3>Practical task</h3>
+<p>Build one reusable prompt template for a task you do every week, using the five parts. Save it. This becomes the first entry in the learner's own prompt library, which is the real takeaway of the course.</p>
+<div class="input"><b>Your input for Course 2:</b> (1) three to five real finance or tax questions your team asks AI, so the examples are authentic; (2) a review of any tax specific example for accuracy; (3) your firm's rule on what must never be pasted into a public AI tool, for the client data lesson.</div>
+
+<!-- ============ COURSE 3 ============ -->
+<h2 id="c3"><span class="chip" style="background:var(--c3);width:16px;height:16px"></span>Course 3 &middot; Automating Finance Workflows with AI Agents</h2>
+<div class="meta"><span><b>Level:</b> Intermediate</span><span><b>Learning hours:</b> 5</span><span><b>Price:</b> A$590</span><span><b>Angle:</b> Copilot Studio and OpenAI</span></div>
+<p>Who it is for: professionals who are comfortable with AI in chat and now want to automate a repeatable firm task end to end, with a human in the loop.</p>
+<p><b>By the end they can:</b> map a firm task into an automatable workflow; build a working agent in Copilot Studio; and keep a human review gate for accuracy and accountability.</p>
+
+<h3>Module plan</h3>
+<div class="card">
+  <p><b>Module 1 &middot; What an AI agent really is</b></p>
+  <ul>
+    <li>1.1 Agent versus a single prompt: the honest difference</li>
+    <li>1.2 Where agents genuinely help in a firm, and where they do not</li>
+    <li>1.3 Three realistic firm examples</li>
+  </ul>
+  <p><b>Module 2 &middot; Mapping a task into a workflow</b></p>
+  <ul>
+    <li>2.1 Breaking a task into steps a machine can follow</li>
+    <li>2.2 Deciding the review gates: where a human must sign off</li>
+    <li>2.3 Drawing the workflow before you build it</li>
+  </ul>
+  <p><b>Module 3 &middot; Building your first agent in Copilot Studio</b></p>
+  <ul>
+    <li>3.1 A tour of Copilot Studio, no code</li>
+    <li>3.2 Building a simple agent step by step</li>
+    <li>3.3 Giving it instructions it will follow reliably</li>
+  </ul>
+  <p><b>Module 4 &middot; Connecting data and actions safely</b></p>
+  <ul>
+    <li>4.1 Grounding the agent in the right, approved sources</li>
+    <li>4.2 Letting an agent take an action, with guardrails</li>
+    <li>4.3 What to never let an agent do unsupervised</li>
+  </ul>
+  <p><b>Module 5 &middot; Human in the loop by design</b></p>
+  <ul>
+    <li>5.1 Review gates, approvals and stop conditions</li>
+    <li>5.2 Keeping the accountability trail</li>
+  </ul>
+  <p><b>Module 6 &middot; Testing, monitoring and rollout</b></p>
+  <ul>
+    <li>6.1 Testing an agent before it touches real work</li>
+    <li>6.2 Monitoring it once live, and knowing when to switch it off</li>
+  </ul>
+</div>
+
+<h3>Sample fully drafted lesson &middot; 2.2 Deciding where a human must sign off</h3>
+<div class="card">
+  <p><span class="eyebrow">Why this matters</span><br>An agent that runs unsupervised in regulated work is a liability. An agent with the right review gates is an assistant. The difference is deciding, up front, where a human must approve before anything moves.</p>
+  <p><span class="eyebrow">What you will be able to do</span><br>Look at any workflow and mark the points where a human sign off is mandatory, so accountability is never lost.</p>
+  <p><span class="eyebrow">The idea, in plain English</span><br>Every automated workflow has steps. Some are safe to automate fully (gathering, drafting, sorting). Some must always pause for a human (anything sent to a client, filed with a regulator, or that moves money). You decide these gates before you build, not after.</p>
+  <p><span class="eyebrow">In your firm</span></p>
+  <div class="input"><b>Your input:</b> one repeatable task your firm would love to automate. For example, drafting a first pass BAS review, preparing a monthly client report, or triaging inbox queries. Give me the steps and I will map the review gates around your real process.</div>
+  <p><span class="eyebrow">Show me</span><br>Take "prepare the monthly client report". The agent can gather the numbers, draft the commentary and format the report (safe to automate). It must then stop and wait: a human reviews the commentary and approves before it is sent (mandatory gate). Sending is the last step, and only a human releases it.</p>
+  <p><span class="eyebrow">Try it</span><br>In the supplied worksheet, take a five step workflow and mark each step green (automate), amber (automate with a check), or red (human must approve). Justify each red.</p>
+  <p><span class="eyebrow">Watch out</span></p>
+  <div class="input"><b>Your input:</b> your professional rule for what must always be a red gate. My placeholder: anything that leaves the firm, is lodged with the ATO or a regulator, or affects a client's money or tax position, is always a human approval, no exceptions. Please put this in your own words, it is a key trust message for the course.</div>
+  <p><span class="eyebrow">Takeaway</span><br>Decide the human sign off points before you build. Automation speeds the work up to the gate, a professional still opens it.</p>
+</div>
+
+<h3>Knowledge check &middot; end of Module 2</h3>
+<div class="quiz">
+  <p><b>Q.</b> In a firm workflow, which step should always be a human approval gate?<br>
+  A. Gathering the data &nbsp;&middot;&nbsp; B. Drafting the commentary &nbsp;&middot;&nbsp; <b>C. Sending the report to the client</b></p>
+  <p class="a">Answer: C. Drafting can be automated, releasing to a client cannot.</p>
+</div>
+
+<h3>Practical task</h3>
+<p>Design and build a simple agent in Copilot Studio for one real, low risk task from your own firm, with at least one human review gate. Learners submit the workflow map and a note on where they placed the gate and why.</p>
+<div class="input"><b>Your input for Course 3:</b> (1) two or three tasks your firm actually wants to automate, so the build is real; (2) your firm's non negotiable red gates; (3) confirmation that Copilot Studio is the right build tool for your audience, or whether to also cover a ChatGPT based build.</div>
+
+<!-- ============ COURSE 4 ============ -->
+<h2 id="c4"><span class="chip" style="background:var(--c4);width:16px;height:16px"></span>Course 4 &middot; AI Governance, Risk &amp; Compliance for Firms</h2>
+<div class="meta"><span><b>Level:</b> Advanced</span><span><b>Learning hours:</b> 4</span><span><b>Price:</b> A$690</span><span><b>Angle:</b> deploy AI safely in regulated work</span></div>
+<p>Who it is for: partners, managers and anyone responsible for rolling AI out across a firm without breaching duty of care. This is the course that lets a firm say yes to AI with confidence.</p>
+<p><b>By the end they can:</b> handle client data securely across Copilot and OpenAI Enterprise; put the right review controls and audit trails in place; and write a practical AI policy for their firm.</p>
+
+<h3>Module plan</h3>
+<div class="card">
+  <p><b>Module 1 &middot; Duty of care in an AI world</b></p>
+  <ul>
+    <li>1.1 Your existing professional obligations, applied to AI</li>
+    <li>1.2 The Australian frame: who expects what of you</li>
+    <li>1.3 The three risks that actually matter</li>
+  </ul>
+  <p><b>Module 2 &middot; Data security and privacy</b></p>
+  <ul>
+    <li>2.1 Where your data goes with Copilot versus a public tool</li>
+    <li>2.2 Client data, privacy obligations and consent</li>
+    <li>2.3 The enterprise boundary: what changes with OpenAI Enterprise and M365 Copilot</li>
+  </ul>
+  <p><b>Module 3 &middot; Review controls and audit trails</b></p>
+  <ul>
+    <li>3.1 The evidence you must keep when AI touches client work</li>
+    <li>3.2 Sign off, version control and record keeping</li>
+    <li>3.3 Making an AI assisted file defensible after the fact</li>
+  </ul>
+  <p><b>Module 4 &middot; Writing your firm's AI policy</b></p>
+  <ul>
+    <li>4.1 The one page policy every firm needs</li>
+    <li>4.2 Acceptable use, in plain language your team will follow</li>
+    <li>4.3 Rolling it out and training the team</li>
+  </ul>
+  <p><b>Module 5 &middot; Managing risk over time</b></p>
+  <ul>
+    <li>5.1 When the model changes under you</li>
+    <li>5.2 Vendor due diligence, in proportion</li>
+    <li>5.3 Handling an AI related incident</li>
+  </ul>
+</div>
+
+<h3>Sample fully drafted lesson &middot; 4.1 The one page AI policy every firm needs</h3>
+<div class="card">
+  <p><span class="eyebrow">Why this matters</span><br>Most firms either ban AI, which drives it underground onto personal phones, or say nothing, which is worse. A single clear page is what actually protects the firm and lets people use AI well.</p>
+  <p><span class="eyebrow">What you will be able to do</span><br>Produce a one page AI policy for your firm from a ready template, covering the essentials without the legal bloat nobody reads.</p>
+  <p><span class="eyebrow">The idea, in plain English</span><br>A usable AI policy answers five questions: which tools are approved, what may and may not be put into them, when a human must review, how AI assisted work is recorded, and who to ask when unsure. One page, plain language.</p>
+  <p><span class="eyebrow">In your firm</span></p>
+  <div class="input"><b>Your input, important:</b> this lesson hands the learner a policy template. That template should reflect how you would actually advise a firm to operate. I will draft a strong default, then I need your review of: approved tools, the client data rule, the mandatory review points, and the record keeping standard. This template is a genuine asset that can carry Empathetic AI's name, so it is worth getting exactly right with you.</div>
+  <p><span class="eyebrow">Show me</span><br>We walk through the template section by section, filling a realistic small firm example, then show how to adapt each line.</p>
+  <p><span class="eyebrow">Try it</span><br>Complete the template for your own firm. Learners leave the lesson with a finished, usable policy, which is the single most valuable outcome in the whole Academy.</p>
+  <p><span class="eyebrow">Watch out</span></p>
+  <div class="input"><b>Your input:</b> the Australian regulatory references you want cited (for example privacy obligations, professional standards, Tax Practitioners Board expectations). I will place them correctly once you tell me which to include, so we are accurate and not overreaching.</div>
+  <p><span class="eyebrow">Takeaway</span><br>One clear page beats a fifty page policy nobody reads. Approved tools, data rules, review points, records, and who to ask.</p>
+</div>
+
+<h3>Knowledge check &middot; end of Module 4</h3>
+<div class="quiz">
+  <p><b>Q.</b> What is the main risk of a firm having no AI policy at all?<br>
+  A. Nothing, staff will be careful &nbsp;&middot;&nbsp; <b>B. Staff use AI anyway, on personal tools, with no controls</b> &nbsp;&middot;&nbsp; C. AI stops working</p>
+  <p class="a">Answer: B. Silence does not stop AI use, it just removes the firm's control over it.</p>
+</div>
+
+<h3>Practical task</h3>
+<p>Draft your firm's one page AI policy from the template. This is the capstone deliverable of the whole program, a real artefact the learner walks away with.</p>
+<div class="input"><b>Your input for Course 4:</b> this is the most expertise heavy course, so it needs the most from you: (1) the AI policy template content you would stand behind; (2) which Australian regulations and professional standards to cite; (3) your real world view on the top governance failures you have seen, for the risk module. I will draft everything first so you are editing, not writing from scratch.</div>
+
+<!-- ============ CERTIFICATION ============ -->
+<h2 id="cert">The bundle and the certification</h2>
+<p>The four courses together form the <b>Certified AI-in-Finance Practitioner</b> program (A$1,990). On top of the four course quizzes, the certification adds a short <b>practitioner assessment</b>: three or four applied scenarios where the learner shows judgement, not recall. For example, "here is an AI output on a client matter, what must you check and record before it goes out". Passing earns the premium navy and gold certificate we designed, which they add to LinkedIn, which brings the next student. That growth loop is already built and live.</p>
+
+<!-- ============ NEXT ============ -->
+<h2 id="next">What I need from you, in priority order</h2>
+<ol>
+  <li><b>A yes or tweak on the framework and quiz model</b> above. Once you are happy with the shape, every course is fast to fill.</li>
+  <li><b>Your real examples</b>: a handful of genuine finance and tax tasks per course. This is what turns a good course into an unmistakably expert one. The gold boxes list exactly what would help most.</li>
+  <li><b>The governance course template and references</b> (Course 4), since that one leans most on your expertise and is the hardest to fake.</li>
+</ol>
+<p>You do not need to write lessons. I draft the structure, the examples, the walkthroughs and the quizzes, you correct the finance and tax substance and add the real stories, and I build it all into the Academy. On our Thursday session we can lock the framework and I will already have the drafts moving.</p>
+
+<footer><div>Empathetic AI Academy &middot; internal working draft, not published. Prepared for Angela. This page updates as we go.</div></footer>
+</main>
+</body>
+</html>

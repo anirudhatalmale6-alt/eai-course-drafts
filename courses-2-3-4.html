@@ -1,0 +1,1004 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Courses 2, 3 and 4 - full drafts - Empathetic AI Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2563EB; --ink:#0f172a; --body:#334155; --muted:#64748b;
+  --line:#e5e7eb; --bg:#ffffff; --soft:#f8fafc;
+  --c1:#8B5CF6; --c2:#EC4899; --c3:#14B8A6; --c4:#F59E0B; --free:#3B82F6; --bundle:#6366F1;
+  --input:#b45309; --inputbg:#fffbeb; --inputborder:#fcd34d;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--body);background:var(--bg);line-height:1.65;font-size:16px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+header.top{background:linear-gradient(180deg,#f8fafc, #ffffff);border-bottom:1px solid var(--line);padding:46px 0 34px}
+.badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);background:#eff6ff;border:1px solid #dbeafe;padding:6px 12px;border-radius:999px;margin-bottom:16px}
+h1{font-size:30px;line-height:1.2;color:var(--ink);font-weight:800;margin:0 0 10px}
+.lede{font-size:17px;color:var(--muted);max-width:640px}
+h2{font-size:24px;color:var(--ink);font-weight:800;margin:52px 0 6px;padding-top:14px}
+h3{font-size:19px;color:var(--ink);font-weight:700;margin:30px 0 6px}
+h4{font-size:16px;color:var(--ink);font-weight:700;margin:20px 0 4px}
+p{margin:10px 0}
+ul,ol{margin:10px 0;padding-left:22px}
+li{margin:5px 0}
+a{color:var(--blue)}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.card{border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:18px 0;background:#fff;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.rule{height:1px;background:var(--line);border:0;margin:14px 0}
+.pill{display:inline-block;font-size:12.5px;font-weight:600;padding:4px 11px;border-radius:999px;margin:3px 6px 3px 0}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--muted);margin:8px 0 4px}
+.meta b{color:var(--ink);font-weight:600}
+.input{background:var(--inputbg);border:1px solid var(--inputborder);border-left:4px solid var(--input);border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#7c4a06}
+.input b{color:var(--input)}
+.demo{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0;font-size:14.5px}
+.demo .q{color:var(--ink);font-weight:600}
+.prompt{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;background:#0f172a;color:#e2e8f0;border-radius:10px;padding:14px 16px;margin:12px 0;white-space:pre-wrap;line-height:1.55}
+.quiz{background:#f1f5f9;border-radius:10px;padding:14px 16px;margin:12px 0;font-size:14.5px}
+.quiz .a{color:#047857;font-weight:600}
+.toc{columns:2;column-gap:28px;font-size:15px;margin:14px 0}
+.toc a{display:block;padding:4px 0;text-decoration:none;color:var(--body)}
+.toc a:hover{color:var(--blue)}
+.chip{width:12px;height:12px;border-radius:3px;display:inline-block;vertical-align:middle;margin-right:8px}
+.anat{counter-reset:step;list-style:none;padding-left:0}
+.anat li{counter-increment:step;position:relative;padding:8px 0 8px 42px;border-bottom:1px dashed var(--line)}
+.anat li:before{content:counter(step);position:absolute;left:0;top:8px;width:26px;height:26px;background:var(--blue);color:#fff;border-radius:50%;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.small{font-size:13.5px;color:var(--muted)}
+footer{border-top:1px solid var(--line);margin-top:50px;padding:26px 0 60px;color:var(--muted);font-size:14px}
+@media(max-width:640px){.toc{columns:1}h1{font-size:25px}}
+</style>
+<style>
+.red{background:#fef2f2;border:1px solid #fecaca;border-left:4px solid #dc2626;border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#7f1d1d}
+.red b{color:#b91c1c}
+.au{background:#eff6ff;border:1px solid #bfdbfe;border-left:4px solid #2563EB;border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#1e3a8a}
+.au b{color:#1d4ed8}
+.lesson{border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:16px 0;background:#fff}
+.lesson h4{margin-top:0;font-size:17px}
+.lesson .eyebrow{display:block;margin-top:14px}
+.mod{background:var(--soft);border-radius:12px;padding:16px 20px;margin:34px 0 8px;border:1px solid var(--line)}
+.mod h3{margin:0;font-size:20px}
+.mod p{margin:6px 0 0;font-size:14.5px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:14px 0}
+th{text-align:left;background:var(--ink);color:#fff;padding:9px 12px;font-weight:600;font-size:13px}
+td{padding:9px 12px;border-top:1px solid var(--line);vertical-align:top}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <span class="badge">Empathetic AI Academy &middot; Courses 2, 3 and 4 &middot; Full drafts</span>
+  <h1>The rest of the program</h1>
+  <p class="lede">All three remaining courses, drafted in the same job-first shape as Course 1. Every lesson is written. Gold boxes are where I need you, red boxes are your five limits, placed where each one actually bites. Read it in any order and send your feedback in one document.</p>
+</div></header>
+
+<main class="wrap">
+
+<div class="card">
+  <span class="eyebrow">On this page</span>
+  <div class="toc">
+    <a href="#shape">The shape, applied to all four</a>
+    <a href="#c2"><span class="chip" style="background:var(--c2)"></span>Course 2 &middot; Prompting</a>
+    <a href="#c3"><span class="chip" style="background:var(--c3)"></span>Course 3 &middot; AI Agents</a>
+    <a href="#c4"><span class="chip" style="background:var(--c4)"></span>Course 4 &middot; Governance</a>
+    <a href="#order">The order they should be taken in</a>
+    <a href="#next">What I need from you</a>
+  </div>
+  <p style="margin:14px 0 0" class="small">Companion to the <a href="./copilot-for-finance.html">Course 1 full draft</a> and the <a href="./">design framework</a>.</p>
+</div>
+
+<h2 id="shape">The shape, applied to all four</h2>
+<p>Course 1 changed from being organised by application to being organised by job. I have applied the same test to the other three, and it moved all of them. Each course now answers a question a professional would actually ask, rather than describing a technology.</p>
+<div class="card">
+  <table>
+    <tr><th>Course</th><th>The question it answers</th><th>Organised around</th></tr>
+    <tr><td>1 &middot; Microsoft 365 Copilot</td><td>How do I get my actual work done faster?</td><td>Five finance jobs</td></tr>
+    <tr><td>2 &middot; Prompting</td><td>How do I get an answer I can defend?</td><td>Five kinds of answer</td></tr>
+    <tr><td>3 &middot; AI Agents</td><td>What should run without me, and what must not?</td><td>Building one real agent</td></tr>
+    <tr><td>4 &middot; Governance</td><td>How do I let my firm use this safely?</td><td>Decisions a leader has to make</td></tr>
+  </table>
+</div>
+<p>One thing worth naming: Course 2 is the one most people will underestimate and the one that will get the best reviews. Prompting sounds trivial until you watch a senior professional get a confidently wrong answer from a lease and not notice. The course is really about verification habits wearing a prompting badge, which is why it now sits second rather than last.</p>
+
+<!-- ================================================================= -->
+<!-- COURSE 2 -->
+<!-- ================================================================= -->
+<h2 id="c2"><span class="chip" style="background:var(--c2);width:16px;height:16px"></span>Course 2 &middot; Prompting for Reliable, Auditable Answers</h2>
+<div class="meta"><span><b>Level:</b> Beginner</span><span><b>Learning hours:</b> 4</span><span><b>Lessons:</b> 17</span><span><b>Price:</b> A$590 + GST</span></div>
+<p><b>Who it is for:</b> anyone who has had an AI tool give them an answer that looked right and was not, and wants to stop that happening on client work.</p>
+<p><b>The through line:</b> a good prompt is not clever wording. It is a set of constraints that make a wrong answer visible.</p>
+
+<div class="mod" id="c2m1"><h3>Module 1 &middot; What makes an answer defensible</h3>
+<p>3 lessons &middot; 40 minutes.</p></div>
+
+<div class="lesson">
+<h4>1.1 Why two people get different answers from the same tool</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Explain why the same question produces different answers, and stop treating that as a flaw to be worked around.</p>
+<span class="eyebrow">The idea</span>
+<p>These tools predict a plausible continuation. Plausible is not the same as correct, and the same question asked twice can land on two different plausible answers. That is not a bug you can prompt your way out of. It is the reason every technique in this course exists: if the output varies, your job is to make variation detectable rather than to hope it does not happen.</p>
+<span class="eyebrow">Do this</span>
+<p>Ask the same substantive question three times in three fresh chats. Not a trivia question, something with judgement in it. Put the three answers side by side and highlight where they differ. The differences are the parts you must verify on every future answer.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Where the answers disagree with each other is where they might disagree with the truth.</p>
+</div>
+
+<div class="lesson">
+<h4>1.2 The five parts of a reliable prompt</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Build any working prompt from five components, instead of writing a sentence and hoping.</p>
+<span class="eyebrow">The idea</span>
+<p>Every prompt that behaves consistently has the same five parts: the role, the source, the task, the output shape, and the constraint. Miss the source and it invents. Miss the output shape and you get prose you have to re-read. Miss the constraint and it fills gaps silently.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">ROLE   You are reviewing this as a senior accountant.
+SOURCE Use only the attached trial balance and the prior year
+       comparison. Do not use outside knowledge.
+TASK   Identify the five accounts most likely to contain an
+       error, and say why for each.
+SHAPE  A table: account, movement, reason for suspicion,
+       what I should check.
+LIMIT  If the data does not support a suspicion, return fewer
+       than five rows rather than filling the table.</div>
+<p class="small">That last line is the one people leave out, and it is the one that stops the model manufacturing a fifth answer to satisfy your request.</p>
+<span class="eyebrow">Check this</span>
+<p>Remove one part and run it again. Watching the answer degrade teaches the lesson better than any explanation.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Role, source, task, shape, limit. Missing parts get filled in by the model, not by you.</p>
+</div>
+
+<div class="lesson">
+<h4>1.3 Telling it what you do not want</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Write the negative half of a prompt, which is where most of the reliability comes from.</p>
+<span class="eyebrow">The idea</span>
+<p>Professionals are trained to specify what they want. With these tools, the higher-value instruction is what must not happen: do not infer, do not round, do not use outside knowledge, do not fill a gap, do not soften the finding. Each one closes off a specific failure you would otherwise have to catch by reading.</p>
+<span class="eyebrow">Do this</span>
+<p>Take a prompt you already use and add three negative constraints. Run both versions on the same source and compare.</p>
+<div class="prompt">Do not infer any figure that is not stated in the document.
+Where something is missing, write MISSING rather than an
+estimate. Do not round. Do not summarise across entities.</div>
+<div class="red"><b>Red line 2.</b> Making decisions purely based on AI output without checking the underlying data, assumptions, calculations and sources. Negative constraints do not remove the need to check. They make checking possible in a reasonable amount of time.</div>
+<div class="quiz">
+<p><b>Knowledge check, end of Module 1.</b> Your prompt returns a tidy five-row table every time, even for a small data set. What does that most likely mean?</p>
+<p>A. The tool is thorough<br>
+<b>B. You asked for five rows, so it produced five rows whether or not the data supported them</b><br>
+C. The data set is larger than you thought</p>
+<p class="a">Answer: B. A requested shape is a target the model will hit. Always allow it to return less.</p>
+</div>
+</div>
+
+<div class="mod" id="c2m2"><h3>Module 2 &middot; Interrogating a long document</h3>
+<p>3 lessons &middot; 43 minutes. Contracts, leases, rulings, policies, agreements.</p></div>
+
+<div class="lesson">
+<h4>2.1 Questioning a contract, lease or ruling</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Get reliable answers out of a fifty-page document in minutes, without trusting a summary.</p>
+<span class="eyebrow">The idea</span>
+<p>The instinct is to ask for a summary. A summary is the least useful and most dangerous output, because it flattens exactly the exceptions and carve-outs that matter and you have no way to see what it dropped. Ask narrow questions instead, and ask them one at a time.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Using only this lease, answer each question separately. For
+each, quote the exact clause you relied on and give the clause
+number. If the lease does not answer the question, say NOT
+ADDRESSED rather than reasoning from general knowledge.
+
+1. What is the review mechanism and when does it apply?
+2. Who pays outgoings, and are any excluded?
+3. What are the make-good obligations at the end of term?
+4. Is there an option to renew, and what triggers it?</div>
+<span class="eyebrow">Check this</span>
+<p>Open the document at each quoted clause number. This takes two minutes and catches the failure mode that matters most: a real-sounding quote attached to the wrong clause.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Narrow questions with quoted sources. Never a summary you cannot audit.</p>
+</div>
+
+<div class="lesson">
+<h4>2.2 Making it quote the clause, not paraphrase it</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Force verbatim quotation, and recognise a paraphrase pretending to be one.</p>
+<span class="eyebrow">The idea</span>
+<p>A paraphrase is where meaning quietly shifts. "Rent is reviewed annually to CPI" and "rent may be reviewed annually to CPI at the lessor's election" are one word apart and financially very different. Insisting on verbatim text moves the risk from interpretation, which you cannot see, to transcription, which you can check.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Quote the relevant text word for word, in quotation marks,
+exactly as it appears including any defined terms. Then, on a
+separate line, give your plain English reading. Never merge
+the two.</div>
+<span class="eyebrow">Watch out</span>
+<p>Models will occasionally produce a fluent quotation that does not exist in the document. Search the source for a distinctive phrase from each quote. If you cannot find it, nothing else in that answer is trustworthy either.</p>
+<div class="input"><b>Your input:</b> one real de-identified contract or ruling with a genuinely tricky clause, ideally one you have seen misread before. A real trap is worth more than a clean textbook example, because the whole point of this module is catching a plausible misreading.</div>
+</div>
+
+<div class="lesson">
+<h4>2.3 Comparing two versions of the same document</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Find what actually changed between two drafts, including the changes nobody flagged.</p>
+<span class="eyebrow">The idea</span>
+<p>Comparison is a task where these tools are genuinely strong, because it is bounded: both texts are in front of it. The discipline is asking for materiality rather than a list of every altered comma.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Compare version A and version B of this agreement. List only
+changes that alter an obligation, a payment, a timeframe or a
+risk allocation. For each: the clause, the old wording, the
+new wording, and who it now favours. Ignore formatting and
+pure drafting changes. Then separately list anything removed
+entirely.</div>
+<p class="small">"Anything removed entirely" is asked for separately because deletions are what get missed. There is no new text to notice.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Ask what changed materially, and always ask separately what disappeared.</p>
+</div>
+
+<div class="mod" id="c2m3"><h3>Module 3 &middot; Structured data you can trust</h3>
+<p>3 lessons &middot; 45 minutes. Turning documents into rows.</p></div>
+
+<div class="lesson">
+<h4>3.1 From invoices and statements to a clean table</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Extract consistent fields from a stack of inconsistent documents.</p>
+<span class="eyebrow">The idea</span>
+<p>Extraction fails when the field definition is loose. "Date" is not a field. "Invoice date as printed on the document, in DD/MM/YYYY" is. Every ambiguity you leave is a decision the model makes for you, differently, on each document.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Extract these fields from each attached invoice into one table:
+- supplier_name: exactly as printed
+- abn: digits only, or MISSING
+- invoice_date: DD/MM/YYYY as printed, do not reformat or infer
+- invoice_number: as printed
+- subtotal_ex_gst, gst_amount, total_inc_gst: numbers only
+- source_file: the file name
+
+Rules: never calculate a field that is not printed. If GST is
+not shown, write MISSING, do not derive it. One row per
+invoice, no merged rows.</div>
+<span class="eyebrow">Check this</span>
+<p>For every row, check that subtotal plus GST equals the total as printed. Any row that fails is a document to open by hand, and this single check catches most extraction errors in seconds.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Define the field precisely, or the model defines it for you.</p>
+</div>
+
+<div class="lesson">
+<h4>3.2 Designing the output so errors are visible</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Shape output so that a mistake announces itself instead of hiding.</p>
+<span class="eyebrow">The idea</span>
+<p>This is the most transferable idea in the course. You cannot verify everything, so design the output so wrongness is loud. Three devices do most of the work: a MISSING marker instead of a blank, a confidence column, and a self-check the model must perform and report.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Add two columns to the table above:
+- confidence: high, medium or low, based on how clearly the
+  field was printed
+- flag: any row where a field was hard to read, where two
+  values could have been the field, or where the arithmetic
+  does not tie
+
+Then, below the table, state: how many rows you produced, how
+many documents you were given, and any document you could not
+process at all.</div>
+<p class="small">Row count against document count is a ten-second check that catches silently skipped files, which is the extraction error people notice last.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Make the output tell you where to look.</p>
+</div>
+
+<div class="lesson">
+<h4>3.3 Spot-checking a batch without checking all of it</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Verify a two hundred row extraction in about ten minutes, defensibly.</p>
+<span class="eyebrow">The idea</span>
+<p>Checking everything defeats the purpose; checking nothing is negligent. The middle path is a deliberate sample: everything flagged, everything low confidence, the largest few by value, and a small random handful. That is a sampling approach your profession already understands, applied to a new source of error.</p>
+<span class="eyebrow">Do this</span>
+<p>Take a real extraction and check: all flagged rows, all low-confidence rows, the five largest by value, and five chosen at random. Record what you checked and what you found. That record is the file note.</p>
+<div class="red"><b>Red line 4.</b> Situations where there is no clear audit trail or where you cannot explain how the conclusion was reached. "We extracted 200 invoices with AI" is not a method. "We extracted 200 invoices, checked all 14 flagged rows plus 10 others by value and at random, and found 2 errors which we corrected" is.</div>
+<div class="quiz">
+<p><b>Knowledge check, end of Module 3.</b> Your extraction returns 198 rows from 200 documents and everything ties. What do you do?</p>
+<p>A. Proceed, a 99 percent rate is excellent<br>
+<b>B. Find the two missing documents, because a skipped file is invisible in the output</b><br>
+C. Re-run the whole batch</p>
+<p class="a">Answer: B. Errors you can see are the manageable kind. Absences are the dangerous kind.</p>
+</div>
+</div>
+<div class="mod" id="c2m4"><h3>Module 4 &middot; Client-facing writing</h3>
+<p>3 lessons &middot; 40 minutes. The output that carries your firm's name.</p></div>
+
+<div class="lesson">
+<h4>4.1 Drafting advice that survives partner review</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Produce a first draft of client advice that a reviewer improves rather than rewrites.</p>
+<span class="eyebrow">The idea</span>
+<p>The reason AI-drafted advice gets rewritten is that it answers the question in general rather than for this client. Give it the client's specific facts, the conclusion you have already reached, and the reasoning you want shown. You are asking it to write up your thinking, not to do your thinking.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Write a client letter setting out the following advice.
+The conclusion is mine and is not open for revision:
+[your conclusion]
+The facts you may rely on are these and only these:
+[facts]
+Structure: what we were asked, what we found, what we
+recommend, what we need from you.
+Do not add caveats I have not given you. Do not restate the
+law in general terms. If a fact is needed that I have not
+provided, mark it [FACT NEEDED] rather than assuming it.</div>
+<span class="eyebrow">Check this</span>
+<p>Read the draft asking one question only: does it say anything I did not decide? Anything it added is either a fact it invented or a caveat that changes your advice.</p>
+<div class="red"><b>Red line 1.</b> Final decisions that require professional judgement, accountability or sign-off. The conclusion is yours before the drafting starts. If you find yourself reading the draft to discover what you think, stop.</div>
+</div>
+
+<div class="lesson">
+<h4>4.2 Matching your firm's voice, not the model's</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Get output that sounds like your firm, reliably, without editing every sentence.</p>
+<span class="eyebrow">The idea</span>
+<p>Describing a tone does not work. "Professional but warm" produces the same generic register for everyone. Showing examples works. Two or three pieces of your own real writing will do more than a paragraph of adjectives.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Here are three letters we have sent. Study the sentence
+length, how we open, how we deliver bad news, and how much we
+explain before we recommend. Match those patterns. Do not
+match the content.
+
+Now draft the following letter in that voice: [brief]</div>
+<div class="input"><b>Your input:</b> two or three real client letters, de-identified, that you would be happy to hold up as house style. These become a downloadable asset for learners to use as their own template, and they are the difference between this lesson being useful and being theory.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Show it your writing. Do not describe your writing.</p>
+</div>
+
+<div class="lesson">
+<h4>4.3 The hedging problem, and how to remove it</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Strip out the padding that makes AI writing recognisable and slightly evasive.</p>
+<span class="eyebrow">The idea</span>
+<p>These tools hedge by default: it is important to note, this may vary depending on circumstances, we recommend consulting a professional. In client advice this is worse than clutter. It reads as though you are not sure, and it dilutes the one recommendation you are being paid for.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Rewrite the draft below. Remove every sentence that does not
+carry information. Delete phrases like "it is important to
+note", "this may vary", and any recommendation to seek
+professional advice, since we are the professional advice.
+Keep every number and every deadline. Aim for about 30 percent
+shorter without losing content.</div>
+<span class="eyebrow">Check this</span>
+<p>Compare the two versions and confirm nothing substantive was cut alongside the padding. Aggressive shortening occasionally takes a real qualifier with it.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Hedging is not caution. It is the absence of a decision.</p>
+</div>
+
+<div class="mod" id="c2m5"><h3>Module 5 &middot; Research and citation</h3>
+<p>2 lessons &middot; 29 minutes. The module that prevents the most embarrassing failure.</p></div>
+
+<div class="lesson">
+<h4>5.1 Making the model show its sources</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Get research output where every claim is traceable, and know which tools can honestly do this.</p>
+<span class="eyebrow">The idea</span>
+<p>There is a real difference between a tool that searches and cites what it found, and one that answers from memory and then produces a citation that looks right. The second is where fabricated references come from. Knowing which mode you are in is more important than any prompt.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Answer using only sources you have actually retrieved in this
+session. For each claim, give the source and a direct quote
+from it. If you did not retrieve a source for a claim, mark it
+UNSOURCED. Do not produce a citation you cannot quote from.</div>
+<span class="eyebrow">Check this</span>
+<p>Open every citation. Not a sample, every one. Fabricated references are plausible enough to survive a glance and catastrophic in professional work.</p>
+<div class="au"><b>The Australian frame.</b> A citation to an ATO ruling or an accounting standard that does not exist, or that says something different, is the kind of error that ends up in a professional complaint. This lesson exists because the failure is quiet and the consequence is not.</div>
+</div>
+
+<div class="lesson">
+<h4>5.2 Recognising a confident answer built on nothing</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Notice, from the answer alone, when the model is guessing.</p>
+<span class="eyebrow">The idea</span>
+<p>There are tells. Round numbers with no source. Generalities where you asked for specifics. Confident dates. A reference to "recent guidance" without naming it. Once you have seen the pattern a few times you will feel it before you can articulate it, and the fix is the same every time: ask it to show you.</p>
+<span class="eyebrow">Do this</span>
+<p>Deliberately ask a question you know the tool cannot answer from your material, and study how it responds. Learning the shape of a guess on a low-stakes question is much cheaper than learning it on a client matter.</p>
+<div class="prompt">For your previous answer, mark each sentence as: stated in
+the source, inferred from the source, or from general
+knowledge. Be strict with yourself.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Fluency is not evidence. Ask it to mark its own working.</p>
+</div>
+
+<div class="mod" id="c2m6"><h3>Module 6 &middot; Reviewing, not just producing</h3>
+<p>2 lessons &middot; 28 minutes. The underused half of the tool.</p></div>
+
+<div class="lesson">
+<h4>6.1 Using AI to review a spreadsheet or a draft</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Get a genuine second pair of eyes on work you or a colleague produced.</p>
+<span class="eyebrow">The idea</span>
+<p>Most people use these tools to produce and then check the output themselves. The inverse is often more valuable: you produce, and it reviews. It is tireless, it has no ego about your model, and it does not get bored on row 400.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Review this workbook as a careful reviewer would. Look for:
+formulas inconsistent with the rest of their row or column,
+hard-coded numbers inside formulas, references pointing
+outside the intended range, totals that do not equal the sum
+of their parts, and anything labelled in a way that does not
+match what it calculates. List findings by severity with the
+cell reference. Do not change anything.</div>
+<span class="eyebrow">Check this</span>
+<p>Verify each finding before acting. Review output has false positives, and a confident finding about a formula that is actually fine wastes time if you accept it blindly.</p>
+<span class="eyebrow">Takeaway</span>
+<p>You produce, it reviews. Often more valuable than the other way round.</p>
+</div>
+
+<div class="lesson">
+<h4>6.2 The adversarial prompt: asking it to argue against you</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Stress-test your own conclusion before someone else does.</p>
+<span class="eyebrow">The idea</span>
+<p>These tools are agreeable by default, which makes them poor critics unless instructed otherwise. Told explicitly to argue the other side, they become genuinely useful, because they have no stake in your being right.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Here is my conclusion and the reasoning behind it. Argue
+against it as strongly as the evidence allows. Identify the
+weakest link, what assumption it rests on, and what evidence
+would overturn it. Do not be balanced. Do not reassure me.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Ask it to attack your work before your client, your partner or the board does.</p>
+</div>
+
+<div class="mod" id="c2m7"><h3>Module 7 &middot; Your prompt library</h3>
+<p>1 lesson &middot; 14 minutes. Turning the course into something the team keeps.</p></div>
+
+<div class="lesson">
+<h4>7.1 Building and sharing a prompt library that gets used</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Leave with a small library of prompts your team will actually reuse.</p>
+<span class="eyebrow">The idea</span>
+<p>Most prompt libraries die because they are too big and stored somewhere nobody looks. Ten prompts in a shared document beats a hundred in a system nobody opens. Each entry needs four things: what it is for, the prompt, what to check afterwards, and who owns it.</p>
+<span class="eyebrow">Do this</span>
+<p>Take the five prompts from this course you would actually use, adapt them to your firm's wording, and put them where your team already works. Add the check line to each. Without the check line it is just a shortcut, and shortcuts are how the habits you have just built get lost.</p>
+<div class="input"><b>Your input:</b> where your target firms actually keep shared resources. SharePoint, Teams, a wiki, or realistically a Word document on a shared drive. I will write the lesson for wherever they really are rather than where they should be.</div>
+<span class="eyebrow">Takeaway</span>
+<p>A prompt without its check line is half a prompt.</p>
+</div>
+
+<h3>Practical task and final quiz</h3>
+<p>Practical task: take a real document you are working on this week and answer three questions from it using the Module 2 method, with quoted clauses. Submit the questions, the quotes, and what you found when you checked them.</p>
+<div class="quiz">
+<p><b>Final quiz sample.</b> A colleague sends you a research note drafted with AI, citing three ATO rulings. What do you do first?</p>
+<p>A. Check the reasoning is sound<br>
+<b>B. Open all three rulings and confirm they exist and say what is claimed</b><br>
+C. Rewrite it in the firm's voice</p>
+<p class="a">Answer: B. Sound reasoning built on a citation that does not exist is still worthless, and it is the failure most likely to reach a client.</p>
+</div>
+<div class="input"><b>Your input for Course 2:</b> (1) one real de-identified contract or ruling with a tricky clause; (2) two or three house-style client letters; (3) where firms keep shared resources. Everything else is drafted.</div>
+<!-- ================================================================= -->
+<!-- COURSE 3 -->
+<!-- ================================================================= -->
+<h2 id="c3"><span class="chip" style="background:var(--c3);width:16px;height:16px"></span>Course 3 &middot; Automating Finance Workflows with AI Agents</h2>
+<div class="meta"><span><b>Level:</b> Intermediate</span><span><b>Learning hours:</b> 5</span><span><b>Lessons:</b> 18</span><span><b>Price:</b> A$590 + GST</span></div>
+<p><b>Who it is for:</b> someone who has used AI for individual tasks and now wants a process to run without them standing over it.</p>
+<p><b>The through line:</b> the course builds one real agent, start to finish, and the hardest lessons are about what you deliberately do not automate.</p>
+<p><b>Structural note:</b> this course is a build. The learner picks a process in Module 2 and carries it through to production in Module 7, so what they finish with is a working thing rather than a set of notes.</p>
+
+<div class="mod" id="c3m1"><h3>Module 1 &middot; What an agent is, and when it beats a prompt</h3>
+<p>3 lessons &middot; 42 minutes.</p></div>
+
+<div class="lesson">
+<h4>1.1 Prompt, automation or agent: telling them apart</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Choose the right level of tool for a task, and stop reaching for the most complex one.</p>
+<span class="eyebrow">The idea</span>
+<p>A prompt is you asking, once. An automation follows fixed rules with no judgement. An agent is given a goal and decides its own steps. Most finance problems people describe as needing an agent are actually automations, and a rules-based automation you can read is nearly always better than an agent you cannot predict.</p>
+<span class="eyebrow">Do this</span>
+<p>List five tasks you would like off your plate. For each, ask whether the steps are the same every time. If yes, it is an automation, and you should build that instead. Only the ones where the steps genuinely vary belong in this course.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Use the least clever tool that does the job. Cleverness is unpredictability.</p>
+</div>
+
+<div class="lesson">
+<h4>1.2 What agents are genuinely good at in finance</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Recognise the shape of a task where an agent earns its complexity.</p>
+<span class="eyebrow">The idea</span>
+<p>Agents shine where inputs arrive in unpredictable formats but the intent is consistent. Supplier invoices from forty suppliers in forty layouts, all needing the same six fields. Emails that might be a query, an approval or a complaint. The variation is in the input, not in what you want done.</p>
+<span class="eyebrow">Do this</span>
+<p>For each candidate from 1.1, write down what varies: the input format, the decision, or the output. If only the input format varies, it is a good agent candidate. If the decision varies, be careful. If the output varies, you probably have several processes wearing one name.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Varying inputs, consistent intent. That is the sweet spot.</p>
+</div>
+
+<div class="lesson">
+<h4>1.3 The processes you should refuse to automate</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Say no to an automation request, with reasons that hold up.</p>
+<span class="eyebrow">The idea</span>
+<p>This lesson is the reason the course is credible. There are processes where full automation is the wrong answer regardless of how well it would work technically, and being able to explain why is a senior skill. Your five limits give the test.</p>
+<span class="eyebrow">Do this</span>
+<p>Run each candidate through five questions. Does it end in a decision requiring sign-off? Could it act on data nobody checked? Does it touch sensitive information in a tool without controls? Would the trail show how the conclusion was reached? Is it a compliance, tax, audit, credit or investment decision?</p>
+<div class="red"><b>Red line 5.</b> Fully automating high-risk decisions involving compliance, tax, audit, credit, investment or regulatory obligations without appropriate human oversight. Note the words "fully" and "without oversight". The answer is rarely do not automate. It is automate the preparation, keep the decision.</div>
+<div class="quiz">
+<p><b>Knowledge check, end of Module 1.</b> A partner asks for an agent that reviews expense claims and approves anything under 500 dollars. What is the right response?</p>
+<p>A. Build it, the threshold makes it low risk<br>
+<b>B. Build it to prepare and recommend, with a person approving in one click, and log both</b><br>
+C. Refuse, approvals cannot be automated</p>
+<p class="a">Answer: B. A one-click human approval keeps accountability where it belongs and costs almost nothing in time. C loses all the value; A moves the accountability to nobody.</p>
+</div>
+</div>
+
+<div class="mod" id="c3m2"><h3>Module 2 &middot; Choosing the right process</h3>
+<p>3 lessons &middot; 46 minutes. The learner picks the process they will build.</p></div>
+
+<div class="lesson">
+<h4>2.1 Scoring a candidate process: volume, rules, risk</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Rank your candidate processes objectively instead of by whichever annoys you most.</p>
+<span class="eyebrow">The idea</span>
+<p>Three scores decide it. Volume: how often does it run, and how long does it take. Rule clarity: could you write the rules down for a new starter. Risk: what happens if it goes wrong and nobody notices. High volume plus clear rules plus low risk is where you start. The most irritating task is usually high risk, which is exactly why it is still manual.</p>
+<span class="eyebrow">Do this</span>
+<p>Score each candidate out of five on volume, rule clarity and inverse risk. Build the highest total first. Keep the scoring sheet; it is what you show your manager to justify the effort.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Start where the volume is high and the consequences are low. Earn trust before you spend it.</p>
+</div>
+
+<div class="lesson">
+<h4>2.2 Mapping the process as it actually runs today</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Document the real process, including the parts nobody admits to.</p>
+<span class="eyebrow">The idea</span>
+<p>Every process has an official version and a real one. The real one has the exceptions, the person who is emailed when something looks odd, and the spreadsheet somebody keeps on the side. Automating the official version produces something that breaks in week one.</p>
+<span class="eyebrow">Do this</span>
+<p>Sit with whoever runs it and walk through the last ten real instances, not a description of the process. Ask what they did each time. Write down every exception. Then ask the question that finds the rest: "when does this go wrong, and what do you do then?"</p>
+<div class="input"><b>Your input:</b> one real process from a client, de-identified, with its genuine exceptions. The exceptions are the whole lesson. A clean process map teaches nothing because clean processes do not need this course.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Map what happens, not what is supposed to happen.</p>
+</div>
+
+<div class="lesson">
+<h4>2.3 Deciding where the human sign-off sits</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Place the approval step deliberately, before you build anything.</p>
+<span class="eyebrow">The idea</span>
+<p>Sign-off placed at the end is usually theatre, because by then the work is done and approving is the path of least resistance. Placed at the point where the decision is actually made, it is real. Deciding this before you build means the agent is designed around the checkpoint rather than having one bolted on.</p>
+<span class="eyebrow">Do this</span>
+<p>On your process map, mark the single point where a wrong step becomes expensive to undo. The sign-off goes immediately before it, not at the end.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Put the approval where the decision is, not where the process ends.</p>
+</div>
+
+<div class="mod" id="c3m3"><h3>Module 3 &middot; Your first agent</h3>
+<p>3 lessons &middot; 52 minutes. Hands on in Copilot Studio.</p></div>
+
+<div class="lesson">
+<h4>3.1 Copilot Studio: the parts you actually need</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Navigate Copilot Studio confidently, ignoring the ninety percent you do not need.</p>
+<span class="eyebrow">The idea</span>
+<p>Copilot Studio does a great deal. For a finance agent you need four things: where the instructions live, where the knowledge sources are connected, where actions are defined, and where you test. Everything else can wait until you have built one.</p>
+<span class="eyebrow">Do this</span>
+<p>Create an empty agent, connect one document you know well as a knowledge source, and ask it a question you can verify. Do not build anything real yet. This is orientation.</p>
+<div class="input"><b>Your input:</b> confirm your target firms have Copilot Studio access, since it is licensed separately from Microsoft 365 Copilot. If most do not, I will restructure this module around Power Automate plus Copilot, which more firms already have. This is the single biggest open question in Course 3 and it changes three lessons.</div>
+</div>
+
+<div class="lesson">
+<h4>3.2 Building a working agent from your process map</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Turn the map from Module 2 into an agent that handles the normal case end to end.</p>
+<span class="eyebrow">The idea</span>
+<p>Build the happy path first and resist the urge to handle everything. An agent that manages the seventy percent of cases that are straightforward, and hands the rest to a person, delivers most of the value at a fraction of the complexity.</p>
+<span class="eyebrow">Do this</span>
+<p>Write the agent's instructions as you would brief a capable new starter: what it is for, what it must always do, what it must never do, and when to stop and ask. Then connect the sources it needs.</p>
+<div class="prompt">You process supplier invoices for approval.
+
+ALWAYS: extract supplier, ABN, date, number, amounts and GST
+exactly as printed. Match to a purchase order where one exists.
+NEVER: approve a payment. Never calculate GST that is not
+printed. Never guess a supplier from a partial name.
+STOP AND ASK when: no PO match, the amount differs from the PO
+by more than 5 percent, the supplier is new, or anything is
+unreadable.
+ALWAYS RECORD: what you extracted, what you matched it to, and
+why you stopped if you stopped.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Brief it like a new starter. Always, never, stop and ask, record.</p>
+</div>
+
+<div class="lesson">
+<h4>3.3 Testing it against the messy cases first</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Test in the order that finds problems, rather than the order that feels reassuring.</p>
+<span class="eyebrow">The idea</span>
+<p>Everyone tests the clean case, watches it work and feels good. Test the mess first: the scanned document, the credit note, the foreign currency invoice, the duplicate, the one with two pages stapled the wrong way round. If it handles those or stops sensibly, the clean case is not in doubt.</p>
+<span class="eyebrow">Do this</span>
+<p>Assemble ten genuinely awkward real examples before you test a single normal one. For each, record what you expected, what happened, and whether stopping would have been the right answer.</p>
+<span class="eyebrow">Watch out</span>
+<p>The dangerous outcome is not an error. It is the agent confidently processing something it should have stopped on. Count those separately, because they are the ones that reach production.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Mess first. A confident wrong answer is worse than a stop.</p>
+</div>
+
+<div class="mod" id="c3m4"><h3>Module 4 &middot; Document intake</h3>
+<p>3 lessons &middot; 48 minutes. The most common real use case.</p></div>
+
+<div class="lesson">
+<h4>4.1 From email attachment to a coded entry</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Build the full chain: an invoice arrives by email, and a coded draft entry is waiting for approval.</p>
+<span class="eyebrow">The idea</span>
+<p>This is the flagship example because everyone has it and everyone hates it. The chain is: receive, extract, match, code, queue for approval. Each link can fail differently, so each gets its own check rather than one check at the end.</p>
+<span class="eyebrow">Do this</span>
+<p>Build the chain one link at a time, confirming each before adding the next. Coding is where firm knowledge lives, so give it your actual chart of accounts and your real coding rules, including the ones that are conventions rather than rules.</p>
+<span class="eyebrow">Check this</span>
+<p>Run twenty real invoices through and compare the agent's coding with what your team actually did. Disagreements are either agent errors or undocumented conventions, and both are worth finding.</p>
+<div class="input"><b>Your input:</b> a real, anonymised chart of accounts and two or three coding rules that are genuinely judgement calls, the kind a new starter gets wrong. That is what makes this lesson expert rather than generic.</div>
+</div>
+
+<div class="lesson">
+<h4>4.2 Handling the documents that do not fit the pattern</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Design the exception path properly, so odd documents are handled rather than lost.</p>
+<span class="eyebrow">The idea</span>
+<p>Exceptions are not failures, they are a category. Credit notes, statements sent instead of invoices, multi-page bundles, foreign currency, prepayments spanning periods. Each needs a named destination. An exception with no destination becomes an item nobody owns.</p>
+<span class="eyebrow">Do this</span>
+<p>List every exception type from your testing and give each a route: to a person, to a queue, or to a different process. Then check that every route has an owner and a review interval.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Every exception needs a name and an owner, or it becomes a backlog.</p>
+</div>
+
+<div class="lesson">
+<h4>4.3 The approval step, and what it must show</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Build an approval screen that lets someone approve responsibly in seconds.</p>
+<span class="eyebrow">The idea</span>
+<p>An approval step that shows only a total trains people to click yes. It must show the source document alongside the extracted values, what it matched to, what it changed, and anything it was unsure about. Enough to actually check, little enough to be quick.</p>
+<span class="eyebrow">Do this</span>
+<p>Design the approval view, then hand it to a colleague with three invoices, one of which has a deliberate error. If they catch it, the view is good. If they do not, it is showing the wrong things.</p>
+<div class="red"><b>Red line 4.</b> Situations where there is no clear audit trail or where you cannot explain how the conclusion was reached. If someone asks in a year why an invoice was coded that way, the answer must be on the record, not in the agent's head.</div>
+</div>
+
+<div class="mod" id="c3m5"><h3>Module 5 &middot; Exception monitoring</h3>
+<p>2 lessons &middot; 28 minutes.</p></div>
+
+<div class="lesson">
+<h4>5.1 Watching for the things people forget to check</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Put an agent on the checks that only get done when someone remembers.</p>
+<span class="eyebrow">The idea</span>
+<p>Monitoring is the safest possible use of an agent, because it only ever tells a person something. Duplicate payments, a supplier's bank details changing, a debtor crossing terms, an unusual journal at an unusual hour. None of these are hard to detect. They are just easy to forget.</p>
+<span class="eyebrow">Do this</span>
+<p>Pick three checks nobody currently does reliably. Define exactly what triggers each, who is told, and what they should do about it. If the last answer is unclear, the check is not ready.</p>
+<div class="input"><b>Your input:</b> the three checks you most often find missing when you look at a client's controls. Real ones from real engagements will be far more persuasive than my generic list.</div>
+</div>
+
+<div class="lesson">
+<h4>5.2 Alerts that get acted on rather than muted</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Design alerts people keep reading after the second week.</p>
+<span class="eyebrow">The idea</span>
+<p>An alert nobody acts on is worse than none, because it creates the appearance of a control. The rules are simple and widely ignored: alert on the exception rather than the event, include enough context to decide without opening anything else, and state the action. If you cannot say what the person should do, do not send it.</p>
+<span class="eyebrow">Do this</span>
+<p>Write your three alerts as they will actually appear, then review them a week later and count how many prompted an action. Anything below half needs its threshold changed or should be deleted.</p>
+<span class="eyebrow">Takeaway</span>
+<p>If you cannot name the action, do not send the alert.</p>
+</div>
+
+<div class="mod" id="c3m6"><h3>Module 6 &middot; Human in the loop</h3>
+<p>2 lessons &middot; 31 minutes. The module that makes the rest defensible.</p></div>
+
+<div class="lesson">
+<h4>6.1 Designing a sign-off that is real, not a rubber stamp</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Tell the difference between oversight and its appearance, in your own build.</p>
+<span class="eyebrow">The idea</span>
+<p>Real sign-off has three properties: the person can see what they are approving, they have a genuine ability to reject, and rejection has somewhere to go. Remove any one and it becomes a rubber stamp. The tell is the approval rate. If nothing is ever rejected, nobody is really reviewing.</p>
+<span class="eyebrow">Do this</span>
+<p>Look at your approval step and ask what a person would have to do to reject something, and what happens then. If rejecting is harder than approving, people will approve.</p>
+<div class="red"><b>Red line 1.</b> Final decisions that require professional judgement, accountability or sign-off. Automation does not move accountability. It only changes how much information the accountable person has when they sign.</div>
+</div>
+
+<div class="lesson">
+<h4>6.2 What the agent must record about every decision</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Specify the log so a year-old decision can be reconstructed.</p>
+<span class="eyebrow">The idea</span>
+<p>Six fields cover almost everything: what came in, what the agent extracted or decided, what it matched against, what it was unsure about, who approved and when, and what changed after approval. Written down at design time, this costs nothing. Retrofitted after an incident, it is impossible.</p>
+<span class="eyebrow">Do this</span>
+<p>Write the six fields for your agent and confirm each is actually captured. Then pick a processed item at random and reconstruct it from the log alone, without opening anything else.</p>
+<span class="eyebrow">Takeaway</span>
+<p>If you cannot rebuild the decision from the log, you do not have a log.</p>
+</div>
+
+<div class="mod" id="c3m7"><h3>Module 7 &middot; Running it in production</h3>
+<p>2 lessons &middot; 29 minutes. The part every course skips.</p></div>
+
+<div class="lesson">
+<h4>7.1 When it breaks: failure modes and safe stopping</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Make the agent fail safely rather than quietly.</p>
+<span class="eyebrow">The idea</span>
+<p>There are three failure modes. It stops, which is fine and visible. It errors, which is fine if someone is told. Or it keeps going while being wrong, which is the one that costs money. Design so the third becomes the second: volume limits, sanity checks on its own output, and a hard stop when the rate of unusual cases rises.</p>
+<span class="eyebrow">Do this</span>
+<p>Add three guards: a maximum number of items per run, a check that its own output is within expected ranges, and an automatic stop if exceptions exceed a threshold. Then deliberately break it and confirm you found out.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Make it stop loudly. Silence is the expensive failure.</p>
+</div>
+
+<div class="lesson">
+<h4>7.2 Handover: making it survive you leaving</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Document the agent so someone else can own it.</p>
+<span class="eyebrow">The idea</span>
+<p>The most common end for an internal automation is that the person who built it moves on and nobody dares touch it. One page prevents this: what it does, what it must never do, who owns it, what to check monthly, how to turn it off, and what breaks if the input format changes.</p>
+<span class="eyebrow">Do this</span>
+<p>Write that page. Then have a colleague turn the agent off and on using only your page. If they cannot, it is not finished.</p>
+<span class="eyebrow">Takeaway</span>
+<p>An agent nobody but you can turn off is a risk, not an asset.</p>
+</div>
+
+<h3>Practical task and final quiz</h3>
+<p>Practical task: the agent itself. The learner submits their process map, the agent's instructions, their exception routes and their handover page. This is the capstone of the course and the most substantial artefact in the whole program.</p>
+<div class="quiz">
+<p><b>Final quiz sample.</b> Your invoice agent has run for a month with a 100 percent approval rate. What does that tell you?</p>
+<p>A. It is working perfectly<br>
+<b>B. The approval step may not be functioning as a control, and should be investigated</b><br>
+C. The threshold is set too low</p>
+<p class="a">Answer: B. It might be perfect. But an approval that never rejects anything is indistinguishable from no approval, and you cannot tell which you have without looking.</p>
+</div>
+<div class="input"><b>Your input for Course 3:</b> (1) whether target firms have Copilot Studio, which changes Module 3; (2) one real process with its genuine exceptions; (3) an anonymised chart of accounts plus two or three judgement-call coding rules; (4) the three controls you most often find missing.</div>
+<!-- ================================================================= -->
+<!-- COURSE 4 -->
+<!-- ================================================================= -->
+<h2 id="c4"><span class="chip" style="background:var(--c4);width:16px;height:16px"></span>Course 4 &middot; AI Governance, Risk &amp; Compliance for Firms</h2>
+<div class="meta"><span><b>Level:</b> Intermediate</span><span><b>Learning hours:</b> 4</span><span><b>Lessons:</b> 16</span><span><b>Price:</b> A$590 + GST</span></div>
+<p><b>Who it is for:</b> the person who has to answer for how the firm uses AI. A partner, a CFO, a practice manager, a risk lead.</p>
+<p><b>The through line:</b> you already have the obligations. This course is about meeting them without banning the tools.</p>
+<p><b>Note on level:</b> this is now Intermediate rather than Advanced, per your instruction, and I think the material genuinely fits there. It is not technically hard. It is a set of decisions, and the difficulty is having the conversation, not understanding it.</p>
+<p><b>Where the National AI Plan lives:</b> here, with a dedicated lesson, as I recommended. In Course 1 it is context. In this course it is content.</p>
+
+<div class="mod" id="c4m1"><h3>Module 1 &middot; What your obligations already say</h3>
+<p>3 lessons &middot; 45 minutes.</p></div>
+
+<div class="lesson">
+<h4>1.1 You are already regulated: what applies without new AI law</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Explain, without waiting for AI-specific legislation, what already governs your firm's use of these tools.</p>
+<span class="eyebrow">The idea</span>
+<p>The most common governance mistake is waiting for a rule that names AI. Your existing obligations already cover it: confidentiality, competence, supervision, record keeping, privacy, and the duty to exercise professional judgement. None of them mention AI, and all of them apply to it. A tool that helps you breach an existing obligation is a problem today, not when a new act commences.</p>
+<span class="eyebrow">Do this</span>
+<p>List your firm's five most significant existing obligations. For each, write one sentence on how an AI tool could cause a breach. That list is the foundation for everything else in the course, and it is usually the moment the topic stops feeling abstract.</p>
+<div class="input"><b>Your input:</b> which specific obligations to name for your audience. Accountants, tax agents and financial advisers sit under different regimes and I do not want to blur them. Tell me your primary audience and the two or three standards or codes they answer to, and I will make this lesson concrete rather than general.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Nothing is waiting for AI law. Your obligations already arrived.</p>
+</div>
+
+<div class="lesson">
+<h4>1.2 Australia's National AI Plan, and what it means for a firm</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Explain the national direction to your board or your team in two minutes, and say what it means practically.</p>
+<span class="eyebrow">The idea</span>
+<p>The plan's posture is adoption with appropriate safeguards, rather than restriction. That matters for a firm in two ways. It signals that a blanket ban is out of step with the national direction, and it puts the emphasis on being able to show how you are using AI responsibly. The practical translation is simple: you need a position, and you need evidence for it.</p>
+<span class="eyebrow">Do this</span>
+<p>Write your firm's one-paragraph position on AI, as you would say it to a client who asked. Not a policy yet, just a position. Most firms discover they do not have one, and that is the useful finding.</p>
+<div class="au"><b>Why this matters commercially.</b> Clients are starting to ask their accountants and advisers whether AI touched their work. A firm with a clear position answers confidently, and it becomes a mark of quality. A firm without one either overclaims or goes quiet, and both damage trust.</div>
+<div class="input"><b>Your input:</b> how strongly to lean on the plan, and whether to quote it directly. Government material dates as it evolves, so my instinct is to teach the principles and reference the plan rather than build the lesson on quotations that will need maintaining. Say if you would prefer it quoted more heavily.</div>
+</div>
+
+<div class="lesson">
+<h4>1.3 Where the duty of care actually bites</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Identify the specific moments in your firm's work where AI use could become a professional problem.</p>
+<span class="eyebrow">The idea</span>
+<p>Duty of care is not breached by using a tool. It is breached at identifiable moments: relying on an output you did not check, sending work you cannot explain, putting confidential information somewhere you should not, or letting a junior use a tool without supervision because nobody said not to. Those are the four moments, and each has a control.</p>
+<span class="eyebrow">Do this</span>
+<p>Walk one real engagement end to end and mark every point where an AI tool could be used. For each, name who would use it, on what data, and who would check. The gaps in that table are your real risks, and they are usually not where people expect.</p>
+<div class="red"><b>Red line 1.</b> Final decisions that require professional judgement, accountability or sign-off, especially where the consequences are material. This is the sentence the rest of the course implements.</div>
+<div class="quiz">
+<p><b>Knowledge check, end of Module 1.</b> Your firm has no AI policy and a junior uses a public chatbot to summarise a client file. Whose problem is it?</p>
+<p>A. The junior's, they should have known<br>
+<b>B. The firm's, because supervision and confidentiality obligations sit with the firm regardless of policy</b><br>
+C. Nobody's, there was no rule</p>
+<p class="a">Answer: B. The absence of a policy is itself the finding. "We had no rule" is not a defence, it is an aggravating fact.</p>
+</div>
+</div>
+
+<div class="mod" id="c4m2"><h3>Module 2 &middot; The board conversation</h3>
+<p>3 lessons &middot; 44 minutes. The most immediately useful module for a senior buyer.</p></div>
+
+<div class="lesson">
+<h4>2.1 The five questions a board will ask about AI</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Walk into a board meeting knowing precisely what you will be asked.</p>
+<span class="eyebrow">The idea</span>
+<p>Boards ask the same five questions, in roughly this order. Are we using it? Where is our client data going? What could go wrong and how would we know? Are we behind our competitors? Who is accountable? Every one has a good answer and a bad answer, and the bad answers are all versions of "we are looking into it".</p>
+<span class="eyebrow">Do this</span>
+<p>Write your current honest answer to each of the five. Then mark which you could evidence today. The gap between what you would say and what you could show is the work programme for the rest of this course.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Five questions. Know them before the meeting, not during it.</p>
+</div>
+
+<div class="lesson">
+<h4>2.2 Answering them with evidence rather than reassurance</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Replace confident-sounding answers with short, checkable ones.</p>
+<span class="eyebrow">The idea</span>
+<p>"We take data security very seriously" is a non-answer, and experienced directors hear it as one. "Client data stays in our Microsoft tenant, three tools are approved, two are prohibited, and here is the one-page matrix" is an answer. The difference is not confidence. It is whether there is an artefact behind the sentence.</p>
+<span class="eyebrow">Do this</span>
+<p>For each of the five questions, name the single artefact that supports your answer: the approved-tool matrix, the policy, the incident log, the training record. If a question has no artefact, it currently has no answer.</p>
+<div class="input"><b>Your input:</b> the real questions you have been asked by boards or partners, in their words. Anything from your advisory conversations would make this module unmistakably first-hand rather than reconstructed, which is exactly what a senior buyer can tell the difference between.</div>
+</div>
+
+<div class="lesson">
+<h4>2.3 What to put in the board paper, and what to leave out</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Write a one-page AI update for a board that gets read and does not create work.</p>
+<span class="eyebrow">The idea</span>
+<p>Boards want position, exposure, and decision required. They do not want a technology explainer, and including one signals you have misjudged the audience. One page: where we are, what we have controlled, what we have not yet, and what we want the board to decide or note.</p>
+<span class="eyebrow">Do this</span>
+<p>Draft that page for your own firm. Then cut it by a third. Whatever survives is the part that mattered.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Position, exposure, decision. Never an explainer.</p>
+</div>
+
+<div class="mod" id="c4m3"><h3>Module 3 &middot; Tools and data</h3>
+<p>3 lessons &middot; 45 minutes. Where governance becomes concrete.</p></div>
+
+<div class="lesson">
+<h4>3.1 Classifying your data before you approve any tool</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Sort your firm's information into three or four tiers your team can apply without thinking hard.</p>
+<span class="eyebrow">The idea</span>
+<p>Tool approval is impossible without data classification, because the question is never "is this tool safe" but "is this tool appropriate for this information". Three tiers are usually enough: public, internal, and client confidential, with personal or sensitive information called out separately because it carries its own obligations.</p>
+<span class="eyebrow">Do this</span>
+<p>Take ten real documents from this week and assign each a tier. Where you hesitate, the definitions need sharpening, and that hesitation is more valuable than a clean first pass.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Classify the data first. Tool decisions follow from it.</p>
+</div>
+
+<div class="lesson">
+<h4>3.2 Approving tools: the questions to ask a vendor</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Assess an AI vendor without needing to be technical.</p>
+<span class="eyebrow">The idea</span>
+<p>Six questions get you most of the way. Where is our data stored and processed. Is it used to train their models, and can we turn that off. Who at the vendor can access it. How long is it retained and can we delete it. What happens to our data if we leave. Can you tell us if there is a breach, and how quickly. A vendor who cannot answer these plainly has told you something.</p>
+<span class="eyebrow">Do this</span>
+<p>Send the six questions to a tool your firm already uses. The answers, or the silence, are the lesson.</p>
+<div class="input"><b>Your input:</b> anything you would add from your own vendor assessments, and whether you want the six framed against a specific standard your audience already recognises. Naming a familiar framework makes it feel like part of their existing world rather than a new one.</div>
+</div>
+
+<div class="lesson">
+<h4>3.3 The approved-use matrix your team can actually follow</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Produce a single page that tells everyone which tool may be used on which data.</p>
+<span class="eyebrow">The idea</span>
+<p>This is the artefact that does the most work in the whole course. Tools down the side, data tiers across the top, and a yes, no or with-conditions in each cell. It answers the day-to-day question directly, which a policy document does not, and it fits on a wall.</p>
+<span class="eyebrow">Do this</span>
+<p>Build the matrix for your firm, then test it: ask three colleagues what they would do in three real situations. If they get different answers, a cell is ambiguous.</p>
+<div class="red"><b>Red line 3.</b> Handling highly sensitive or confidential financial information in public AI tools without appropriate data controls. The matrix is how that sentence becomes something a team can follow on a Tuesday afternoon.</div>
+</div>
+
+<div class="mod" id="c4m4"><h3>Module 4 &middot; Assessing a use case</h3>
+<p>2 lessons &middot; 29 minutes.</p></div>
+
+<div class="lesson">
+<h4>4.1 A one-page risk assessment that takes 20 minutes</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Assess a proposed AI use before it starts, quickly enough that people actually do it.</p>
+<span class="eyebrow">The idea</span>
+<p>A heavy assessment process gets bypassed, and bypassed governance is worse than none because it is invisible. One page, twenty minutes, six questions: what is the use, whose data, what could go wrong, who would notice, who signs off, and how would we stop it. Anything longer will be skipped by the people you most need to reach.</p>
+<span class="eyebrow">Do this</span>
+<p>Run the assessment on something your firm is already doing with AI, not a hypothetical. Assessing an existing use is more uncomfortable and considerably more useful.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Governance people skip is worse than none. Keep it to one page.</p>
+</div>
+
+<div class="lesson">
+<h4>4.2 Deciding to proceed, proceed with controls, or decline</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Make and record a decision that will still look reasonable in two years.</p>
+<span class="eyebrow">The idea</span>
+<p>There are only three outcomes, and the middle one is where most cases land. Proceed with controls means naming the controls and who owns them, not writing "with appropriate safeguards". Decline needs a reason and a review date, because the answer may change as the tools do.</p>
+<span class="eyebrow">Do this</span>
+<p>Record your decision on the use case from 4.1 in three lines: the decision, the reasons, the review date. That is the whole record, and it is the thing a regulator or an insurer will ask to see.</p>
+<div class="red"><b>Red line 5.</b> Fully automating high-risk decisions involving compliance, tax, audit, credit, investment or regulatory obligations without appropriate human oversight. In assessment terms this is rarely a decline. It is proceed with controls, where the control is a named human.</div>
+</div>
+
+<div class="mod" id="c4m5"><h3>Module 5 &middot; The policy</h3>
+<p>2 lessons &middot; 29 minutes. The capstone artefact.</p></div>
+
+<div class="lesson">
+<h4>5.1 The one-page AI policy every firm needs</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Write a policy your team can read in three minutes and actually follow.</p>
+<span class="eyebrow">The idea</span>
+<p>Long policies are written to protect the firm and read by nobody. One page, six sections: what we believe, what is approved, what is prohibited, what always requires a human, what to do if something goes wrong, and who to ask. Prohibitions come with reasons, because a rule people understand survives contact with a deadline.</p>
+<span class="eyebrow">Do this</span>
+<p>Draft it from the template. The prohibited section writes itself from your five limits, which is why they were taught first.</p>
+<div class="input"><b>Your input:</b> this is the one place I genuinely cannot write for you. The policy template needs to be something you would put your name to and hand to a client. Send me your version or your edits to mine, and it becomes the flagship downloadable asset of the entire program, with your name on it.</div>
+</div>
+
+<div class="lesson">
+<h4>5.2 Making the policy something people follow</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Get a policy adopted rather than filed.</p>
+<span class="eyebrow">The idea</span>
+<p>Adoption is a separate problem from drafting and it is the one firms lose. Four things move it: someone senior says it out loud, it is short enough to read, it says yes to something rather than only no, and there is an obvious place to ask a question. A policy that only prohibits drives usage underground, which is the outcome you were trying to prevent.</p>
+<span class="eyebrow">Do this</span>
+<p>Name the person who will introduce it, the meeting where it will be introduced, and the channel for questions. Put a date on all three. Without those, it is a document rather than a change.</p>
+<span class="eyebrow">Takeaway</span>
+<p>A policy that only says no gets ignored quietly. Say yes to something.</p>
+</div>
+
+<div class="mod" id="c4m6"><h3>Module 6 &middot; When it goes wrong</h3>
+<p>2 lessons &middot; 29 minutes.</p></div>
+
+<div class="lesson">
+<h4>6.1 Incident response: the first hour</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Know what to do in the first hour after discovering an AI-related problem.</p>
+<span class="eyebrow">The idea</span>
+<p>Incidents here have a particular shape. Confidential information was put somewhere it should not have been. An output went to a client and was wrong. A tool was used against policy. The first hour is the same in each case: contain, establish the facts, decide who needs to know, and write it down as you go rather than afterwards.</p>
+<span class="eyebrow">Do this</span>
+<p>Run a tabletop exercise. "A junior pasted a client's financials into a public chatbot last Tuesday and has just told you." Work through the hour with your team. It takes twenty minutes and changes how seriously the policy is taken.</p>
+<div class="input"><b>Your input:</b> two or three realistic scenarios based on what you have actually seen or heard of. Real scenarios land differently from invented ones, and this is the lesson people will remember and repeat.</div>
+</div>
+
+<div class="lesson">
+<h4>6.2 Telling a client something went wrong</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Have the conversation you are dreading, well.</p>
+<span class="eyebrow">The idea</span>
+<p>The instinct is to minimise, and it is always the wrong call. What preserves a relationship is speed, specificity and what you have already changed. Clients forgive an error handled openly. They rarely forgive discovering it themselves, and they never forgive being managed.</p>
+<span class="eyebrow">Do this</span>
+<p>Draft the notification for the scenario from 6.1. Four parts: what happened, what it means for you, what we have done, what we are changing. No adjectives, no self-defence.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Fast, specific and already fixed. In that order.</p>
+</div>
+
+<div class="mod" id="c4m7"><h3>Module 7 &middot; Evidence</h3>
+<p>1 lesson &middot; 15 minutes.</p></div>
+
+<div class="lesson">
+<h4>7.1 Showing an auditor or regulator how you decided</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Assemble, in an afternoon, the file that shows your firm governed this properly.</p>
+<span class="eyebrow">The idea</span>
+<p>Nobody expects a firm to have got everything right. What they look for is whether you thought about it, decided deliberately, and can show the decision. Six artefacts do it: the policy, the approved-use matrix, use case assessments, the training record, the incident log, and board minutes noting the position. Each one is produced in this course.</p>
+<span class="eyebrow">Do this</span>
+<p>Build the folder. Note the date on each artefact and set a review date. A file that has never been reviewed tells its own story.</p>
+<div class="red"><b>Red line 4.</b> Situations where there is no clear audit trail or where you cannot explain how the conclusion was reached. At firm level this is the same rule applied to governance itself: if you cannot show how the firm decided, you did not really decide.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Six artefacts, dated and reviewed. That is what governed looks like.</p>
+</div>
+
+<h3>Practical task and final quiz</h3>
+<p>Practical task: the firm's one-page AI policy plus the approved-use matrix. Two real artefacts the learner walks away with, which is why this course closes the program.</p>
+<div class="quiz">
+<p><b>Final quiz sample.</b> A regulator asks how your firm governs its use of AI. Which is the strongest response?</p>
+<p>A. "We do not use AI for anything client related"<br>
+B. "We take it very seriously and follow best practice"<br>
+<b>C. "Here is our policy, our approved-use matrix, our assessments for three use cases, and the board minute noting them"</b></p>
+<p class="a">Answer: C. A is rarely true and is easily disproved by asking a junior. B is a non-answer. C is a file.</p>
+</div>
+
+<h2 id="order">The order they should be taken in</h2>
+<p>The four courses now have a natural sequence, which we should say plainly on the site because buyers ask.</p>
+<div class="card">
+  <ol>
+    <li><b>AI Foundations</b> (free) &middot; is this for me</li>
+    <li><b>Microsoft 365 Copilot for Finance</b> &middot; get my own work done</li>
+    <li><b>Prompting for Reliable, Auditable Answers</b> &middot; make the output defensible</li>
+    <li><b>Automating Finance Workflows with AI Agents</b> &middot; make it run without me</li>
+    <li><b>AI Governance, Risk &amp; Compliance</b> &middot; let the whole firm do it safely</li>
+  </ol>
+  <p class="small">Courses 1 and 2 suit anyone. Course 3 suits the person who will build. Course 4 suits whoever answers for the firm, and it is the one most likely to sell as a team purchase, since a partner will want their people on it.</p>
+</div>
+<p>One observation on pricing. Course 4 is the one a firm buys for a whole team, and it is the one with the highest willingness to pay because it removes a risk rather than saving time. It sits at the same A$590 + GST as the others. That is worth revisiting once you have real sales, not now.</p>
+
+<h2 id="next">What I need from you</h2>
+<p>You asked to review everything in one go, so here is the complete list across all three courses, in priority order. Nothing here requires you to write a lesson.</p>
+<div class="card">
+  <table>
+    <tr><th>Priority</th><th>What</th><th>For</th></tr>
+    <tr><td>1</td><td>Your AI policy template, or edits to mine</td><td>Course 4, lesson 5.1 &middot; the flagship asset</td></tr>
+    <tr><td>2</td><td>Your primary audience and the two or three standards they answer to</td><td>Course 4, Module 1</td></tr>
+    <tr><td>3</td><td>Do target firms have Copilot Studio?</td><td>Course 3, Module 3 &middot; changes three lessons</td></tr>
+    <tr><td>4</td><td>One real de-identified contract with a tricky clause</td><td>Course 2, Module 2</td></tr>
+    <tr><td>5</td><td>Two or three house-style client letters</td><td>Course 2, lesson 4.2</td></tr>
+    <tr><td>6</td><td>One real process with its genuine exceptions</td><td>Course 3, Module 2</td></tr>
+    <tr><td>7</td><td>Anonymised chart of accounts + judgement-call coding rules</td><td>Course 3, lesson 4.1</td></tr>
+    <tr><td>8</td><td>Real board questions you have been asked</td><td>Course 4, lesson 2.2</td></tr>
+    <tr><td>9</td><td>Two or three real incident scenarios</td><td>Course 4, lesson 6.1</td></tr>
+    <tr><td>10</td><td>The three controls you most often find missing</td><td>Course 3, lesson 5.1</td></tr>
+  </table>
+</div>
+<p>Items 1 to 3 unblock the most. The rest improve quality but nothing waits on them, and I would rather build with placeholders than have the drafts sit still.</p>
+
+<footer><div>Empathetic AI Academy &middot; Courses 2, 3 and 4 full drafts, internal, not published. Prepared for Angela. Companion to the <a href="./copilot-for-finance.html">Course 1 draft</a> and the <a href="./">design framework</a>.</div></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Course 1 - Microsoft 365 Copilot for Finance - full draft</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2563EB; --ink:#0f172a; --body:#334155; --muted:#64748b;
+  --line:#e5e7eb; --bg:#ffffff; --soft:#f8fafc;
+  --c1:#8B5CF6; --c2:#EC4899; --c3:#14B8A6; --c4:#F59E0B; --free:#3B82F6; --bundle:#6366F1;
+  --input:#b45309; --inputbg:#fffbeb; --inputborder:#fcd34d;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--body);background:var(--bg);line-height:1.65;font-size:16px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+header.top{background:linear-gradient(180deg,#f8fafc, #ffffff);border-bottom:1px solid var(--line);padding:46px 0 34px}
+.badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);background:#eff6ff;border:1px solid #dbeafe;padding:6px 12px;border-radius:999px;margin-bottom:16px}
+h1{font-size:30px;line-height:1.2;color:var(--ink);font-weight:800;margin:0 0 10px}
+.lede{font-size:17px;color:var(--muted);max-width:640px}
+h2{font-size:24px;color:var(--ink);font-weight:800;margin:52px 0 6px;padding-top:14px}
+h3{font-size:19px;color:var(--ink);font-weight:700;margin:30px 0 6px}
+h4{font-size:16px;color:var(--ink);font-weight:700;margin:20px 0 4px}
+p{margin:10px 0}
+ul,ol{margin:10px 0;padding-left:22px}
+li{margin:5px 0}
+a{color:var(--blue)}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.card{border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:18px 0;background:#fff;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.rule{height:1px;background:var(--line);border:0;margin:14px 0}
+.pill{display:inline-block;font-size:12.5px;font-weight:600;padding:4px 11px;border-radius:999px;margin:3px 6px 3px 0}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--muted);margin:8px 0 4px}
+.meta b{color:var(--ink);font-weight:600}
+.input{background:var(--inputbg);border:1px solid var(--inputborder);border-left:4px solid var(--input);border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#7c4a06}
+.input b{color:var(--input)}
+.demo{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0;font-size:14.5px}
+.demo .q{color:var(--ink);font-weight:600}
+.prompt{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;background:#0f172a;color:#e2e8f0;border-radius:10px;padding:14px 16px;margin:12px 0;white-space:pre-wrap;line-height:1.55}
+.quiz{background:#f1f5f9;border-radius:10px;padding:14px 16px;margin:12px 0;font-size:14.5px}
+.quiz .a{color:#047857;font-weight:600}
+.toc{columns:2;column-gap:28px;font-size:15px;margin:14px 0}
+.toc a{display:block;padding:4px 0;text-decoration:none;color:var(--body)}
+.toc a:hover{color:var(--blue)}
+.chip{width:12px;height:12px;border-radius:3px;display:inline-block;vertical-align:middle;margin-right:8px}
+.anat{counter-reset:step;list-style:none;padding-left:0}
+.anat li{counter-increment:step;position:relative;padding:8px 0 8px 42px;border-bottom:1px dashed var(--line)}
+.anat li:before{content:counter(step);position:absolute;left:0;top:8px;width:26px;height:26px;background:var(--blue);color:#fff;border-radius:50%;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.small{font-size:13.5px;color:var(--muted)}
+footer{border-top:1px solid var(--line);margin-top:50px;padding:26px 0 60px;color:var(--muted);font-size:14px}
+@media(max-width:640px){.toc{columns:1}h1{font-size:25px}}
+</style>
+<style>
+.red{background:#fef2f2;border:1px solid #fecaca;border-left:4px solid #dc2626;border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#7f1d1d}
+.red b{color:#b91c1c}
+.au{background:#eff6ff;border:1px solid #bfdbfe;border-left:4px solid #2563EB;border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#1e3a8a}
+.au b{color:#1d4ed8}
+.lesson{border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:16px 0;background:#fff}
+.lesson h4{margin-top:0;font-size:17px}
+.lesson .eyebrow{display:block;margin-top:14px}
+.mod{background:var(--soft);border-radius:12px;padding:16px 20px;margin:34px 0 8px;border:1px solid var(--line)}
+.mod h3{margin:0;font-size:20px}
+.mod p{margin:6px 0 0;font-size:14.5px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:14px 0}
+th{text-align:left;background:var(--ink);color:#fff;padding:9px 12px;font-weight:600;font-size:13px}
+td{padding:9px 12px;border-top:1px solid var(--line);vertical-align:top}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <span class="badge">Empathetic AI Academy &middot; Course 1 &middot; Full draft</span>
+  <h1>Microsoft 365 Copilot for Finance</h1>
+  <p class="lede">Rebuilt around the five real jobs you named: bank reconciliation, month-end close, FP&amp;A, the board pack, and a live dashboard. Every lesson is drafted. Gold boxes are the few places I still need you. Red boxes are your five limits, taught throughout rather than bolted on at the end.</p>
+</div></header>
+
+<main class="wrap">
+
+<div class="card">
+  <span class="eyebrow">On this page</span>
+  <div class="toc">
+    <a href="#changed">What changed, and why</a>
+    <a href="#redlines">Your five red lines</a>
+    <a href="#au">The Australian frame</a>
+    <a href="#glance">The course at a glance</a>
+    <a href="#m1">Module 1 &middot; Getting started</a>
+    <a href="#m2">Module 2 &middot; Bank reconciliation</a>
+    <a href="#m3">Module 3 &middot; Month-end close</a>
+    <a href="#m4">Module 4 &middot; FP&amp;A</a>
+    <a href="#m5">Module 5 &middot; Board pack</a>
+    <a href="#m6">Module 6 &middot; Live dashboard</a>
+    <a href="#m7">Module 7 &middot; Getting it right</a>
+    <a href="#quiz">Final quiz</a>
+    <a href="#next">What I need from you</a>
+  </div>
+</div>
+
+<h2 id="changed">What changed, and why</h2>
+<p>The earlier draft was organised by <em>application</em>: Copilot in Excel, Copilot in Outlook, Copilot in Word. That is how Microsoft sells it, and it is the wrong way round for your audience. Nobody in finance wakes up wanting to learn Excel Copilot. They wake up with a close to finish and a board pack due Friday.</p>
+<p>So the course is now organised by <em>job</em>. The five tasks you named became the five core modules, and the applications appear wherever the job needs them. A single reconciliation lesson moves through Excel, Teams and Outlook because that is how the actual work moves. It makes the course harder to write and considerably more valuable to buy.</p>
+<div class="card">
+  <table>
+    <tr><th>Was</th><th>Now</th></tr>
+    <tr><td>Module 2 &middot; Copilot in Excel</td><td>Module 2 &middot; Bank reconciliation</td></tr>
+    <tr><td>Module 3 &middot; Copilot in Outlook and Teams</td><td>Module 3 &middot; Month-end close</td></tr>
+    <tr><td>Module 4 &middot; Copilot in Word and PowerPoint</td><td>Module 4 &middot; FP&amp;A, and Module 5 &middot; Board pack</td></tr>
+    <tr><td>(nothing)</td><td>Module 6 &middot; Real-time dashboard</td></tr>
+    <tr><td>Module 5 &middot; Getting reliable results</td><td>Module 7 &middot; Getting it right every time</td></tr>
+  </table>
+  <p class="small">3 learning hours and 11 lessons became 4 learning hours and 18 lessons. Price unchanged at A$590 + GST. The Academy already reflects the new structure, so you can click through it live.</p>
+</div>
+
+<h2 id="redlines">Your five red lines</h2>
+<p>These are your words, unchanged. They are now a data object in the codebase, which means they appear identically everywhere: on the Academy home page, in lesson 1.3 of this course, and in every course we write next. If you ever reword them, they change in one place and update everywhere.</p>
+<div class="red">
+  <b>1. Final decisions that require professional judgement, accountability or sign-off</b>, especially where the consequences are material.<br><br>
+  <b>2. Making decisions purely based on AI output</b> without checking the underlying data, assumptions, calculations and sources.<br><br>
+  <b>3. Handling highly sensitive or confidential financial information in public AI tools</b> without appropriate data controls.<br><br>
+  <b>4. Situations where there is no clear audit trail</b> or where you cannot explain how the conclusion was reached.<br><br>
+  <b>5. Fully automating high-risk decisions</b> involving compliance, tax, audit, credit, investment or regulatory obligations without appropriate human oversight.
+</div>
+<p>Each module below ends with the specific red line that bites hardest for that task. That is deliberate. A rule stated once in an introduction is forgotten; the same rule met five times, each time attached to a job the learner just did, is retained.</p>
+
+<h2 id="au">The Australian frame</h2>
+<p>You asked for the National AI Plan as the Australian context. It suits this course well, because it is about adoption with guardrails rather than prohibition, which is exactly the posture a finance team needs to hear from a training provider.</p>
+<p>I use it in two places rather than sprinkling it everywhere. Once in Module 1, to set the national direction and explain why a firm needs a position rather than a ban. Once in Module 7, to connect the plan's language about safe and responsible adoption to the concrete habits the learner has just built: verification, source trails, human sign-off.</p>
+<div class="input"><b>Your input:</b> tell me how firmly you want to lean on the plan. Option A, light touch: two references, framed as national direction. Option B, foreground: a dedicated lesson mapping the plan's principles to a finance team's obligations, which is more distinctive but dates faster as the plan evolves. My recommendation is A for this course and B inside the Governance course, where it belongs more naturally.</div>
+
+<h2 id="glance">The course at a glance</h2>
+<div class="card">
+  <div class="meta"><span><b>Level:</b> Beginner</span><span><b>Learning hours:</b> 4</span><span><b>Lessons:</b> 18</span><span><b>Price:</b> A$590 + GST</span></div>
+  <p><b>Who it is for:</b> finance and accounting professionals whose firm already has Microsoft 365, who want to finish real work faster without losing control of the numbers.</p>
+  <p><b>By the end they can:</b> run a reconciliation and a close with Copilot and know exactly what to check; build budgets, forecasts and variance commentary they can defend; produce a board pack and a live dashboard from their own data; and recognise the five situations where the work should never be handed to AI.</p>
+  <p><b>The through line:</b> Copilot drafts, you verify, and the trail shows who decided what. Every single lesson lands on that.</p>
+</div>
+
+<!-- ================= MODULE 1 ================= -->
+<div class="mod" id="m1"><h3>Module 1 &middot; Getting started with Copilot in a finance team</h3>
+<p>3 lessons &middot; roughly 38 minutes. Sets the boundary before anyone touches client data.</p></div>
+
+<div class="lesson">
+<h4>1.1 What Copilot is, and where it lives in Microsoft 365</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Find Copilot in each app your team uses, and explain in one sentence what it is doing when you ask it something.</p>
+<span class="eyebrow">The idea</span>
+<p>Copilot is not a separate product you visit. It sits inside Excel, Outlook, Word, Teams and PowerPoint, and it reads what you already have access to in Microsoft 365. That last part is the whole story: Copilot's answers are only as good as the file, the thread or the meeting it is looking at, and it can only look at things you are already permitted to see.</p>
+<span class="eyebrow">Do this</span>
+<p>Open a workbook you know well. Click the Copilot button in the Home ribbon. Ask it something you already know the answer to:</p>
+<div class="prompt">Summarise what this worksheet contains, in five bullet points,
+and tell me which columns look like calculated fields.</div>
+<p class="small">Starting with a question you can already answer is the fastest way to calibrate how much to trust it.</p>
+<span class="eyebrow">Watch out</span>
+<p>Copilot answers confidently whether or not it has understood the file. Confidence is not accuracy, and this is the single most expensive habit to unlearn.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Copilot reads your work. It does not know your business.</p>
+</div>
+
+<div class="lesson">
+<h4>1.2 The data boundary: what Copilot can and cannot see</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>State exactly which data your Copilot licence can reach, and decide confidently whether a given client file may be put in front of it.</p>
+<span class="eyebrow">The idea</span>
+<p>There is a meaningful difference between Microsoft 365 Copilot working inside your tenant on files you already have access to, and a free consumer chatbot you paste text into. In the first, the material stays inside your organisation's boundary and inherits your existing permissions. In the second, you have moved client data outside the firm. Most people cannot articulate this difference, which is why they either use AI recklessly or refuse to use it at all.</p>
+<span class="eyebrow">Do this</span>
+<p>Take the three files you touched most this week. For each, write one line: where it lives, who else can see it, and whether it contains anything you would not email to an external party. Keep the list. Module 7 turns it into a rule for your team.</p>
+<div class="input"><b>Your input:</b> which Copilot licence tier your target firms realistically have. The screenshots and the "can it see this" answer differ between Microsoft 365 Copilot and the free Copilot chat, and I want the examples to match what your buyers can actually click. If you are unsure, I will write it for Microsoft 365 Copilot and add a one-page note for firms on the free tier.</div>
+<span class="eyebrow">Watch out</span>
+<p>A file being inside your tenant does not make it appropriate to process. Permission and appropriateness are two different tests, and only one of them is technical.</p>
+<div class="red"><b>Red line 3.</b> Handling highly sensitive or confidential financial information in public AI tools without appropriate data controls. If you cannot say where the data goes, do not put it there.</div>
+</div>
+
+<div class="lesson">
+<h4>1.3 The five red lines: where AI does not belong in finance</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Recognise, before you start a task, whether AI belongs in it at all.</p>
+<span class="eyebrow">The idea</span>
+<p>Every other AI course tells you what the tool can do. This lesson tells you where to stop, and it comes third rather than last on purpose. A professional who knows the limits uses the tool more, not less, because they are no longer nervous about the parts that matter.</p>
+<p>The five limits are taught as a decision you make at the start of a task, not a review you do at the end. By the time you are checking, you have already committed.</p>
+<span class="eyebrow">Do this</span>
+<p>Take the five red lines and apply them to your own week. Write down one task where AI clearly belongs, one where it clearly does not, and one you are genuinely unsure about. The uncertain one is the interesting one, and we return to it in Module 7.</p>
+<span class="eyebrow">Watch out</span>
+<p>The most common failure is not using AI where it was forbidden. It is using it where it was fine, and then not checking, because the output looked finished.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Decide whether AI belongs before you start, not after you have an answer you like.</p>
+<div class="quiz">
+<p><b>Knowledge check, end of Module 1.</b> A client sends a spreadsheet of transactions and asks whether a deduction is allowable. Which part is safe to give Copilot?</p>
+<p>A. The whole question, then send the answer<br>
+<b>B. Summarising and categorising the transactions, while the deductibility conclusion stays with you</b><br>
+C. Neither, AI cannot help here</p>
+<p class="a">Answer: B. Copilot does the volume work. The judgement, and the accountability for it, does not move.</p>
+</div>
+</div>
+<!-- ================= MODULE 2 ================= -->
+<div class="mod" id="m2"><h3>Module 2 &middot; Bank reconciliation</h3>
+<p>3 lessons &middot; roughly 42 minutes. The first real job, chosen because it is high volume, low judgement, and everybody has one.</p></div>
+
+<div class="lesson">
+<h4>2.1 Preparing a bank statement and ledger Copilot can read</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Get two messy exports into a shape Copilot can actually work with, in under five minutes.</p>
+<span class="eyebrow">The idea</span>
+<p>Most reconciliation frustration with AI is not an AI problem. It is a data shape problem. Copilot works well on a clean table with headers in row one, one row per transaction, real dates and real numbers. It works badly on a bank export with three header rows, merged cells, and amounts stored as text with a currency symbol. Ten minutes of shaping saves an hour of arguing.</p>
+<span class="eyebrow">Do this</span>
+<p>Put the bank export on one sheet and the ledger on another, then ask:</p>
+<div class="prompt">This sheet is a bank export. Tell me which row the real headers
+start on, which columns are dates, which are amounts, and flag
+any column where the values are stored as text rather than as
+numbers or dates. Do not change anything yet.</div>
+<p class="small">Note the "do not change anything yet". Ask what is wrong before you ask for a fix, so you stay in control of the edit.</p>
+<span class="eyebrow">Check this</span>
+<p>Sum the amount column yourself and compare it to the statement's closing figure. If those two do not agree, nothing downstream can be trusted, and you have found it in ten seconds rather than at the end.</p>
+<span class="eyebrow">Watch out</span>
+<p>Dates are where Australian teams get burned. A file exported with United States conventions turns the 3rd of April into the 4th of March silently, and the reconciliation will still balance. Always spot check one date you recognise.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Shape the data first. Everything after that gets easier.</p>
+</div>
+
+<div class="lesson">
+<h4>2.2 Matching transactions and surfacing the exceptions</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Have Copilot do the matching pass, and get a clean list of exceptions instead of a wall of ticks.</p>
+<span class="eyebrow">The idea</span>
+<p>The valuable output of a reconciliation is not the matched items. It is the unmatched ones. So do not ask Copilot to reconcile. Ask it to isolate what does not agree, and to tell you why it thinks so.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Compare the transactions in the Bank sheet with those in the
+Ledger sheet. Match on amount and date within three days.
+Return three tables: matched, in the bank but not the ledger,
+and in the ledger but not the bank. For each unmatched item
+include the date, amount, description, and your best guess at
+the reason. Do not delete or alter any source rows.</div>
+<p class="small">Three tables, not one verdict. The shape of the request determines whether you get something reviewable.</p>
+<span class="eyebrow">Check this</span>
+<p>Two checks, both fast. First, matched plus unmatched must equal the total row count on each side; if rows have gone missing, the answer is wrong regardless of how tidy it looks. Second, pick the largest matched item and verify it by eye.</p>
+<span class="eyebrow">Watch out</span>
+<p>A three-day tolerance will happily match two genuinely different payments of the same amount, which is common with regular supplier payments. Any match you cannot explain is an exception, not a match.</p>
+<div class="red"><b>Red line 2.</b> Making decisions purely based on AI output without checking the underlying data, assumptions, calculations and sources. A reconciliation that balances because the tool was allowed to drop rows is worse than one that does not balance, because nobody goes looking.</div>
+</div>
+
+<div class="lesson">
+<h4>2.3 Explaining and clearing the unmatched items</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Turn a list of exceptions into a short written explanation your manager or client can act on.</p>
+<span class="eyebrow">The idea</span>
+<p>The last mile of a reconciliation is writing up what is outstanding and why. It is the part that gets rushed at 6pm, and the part a reviewer actually reads. Copilot is genuinely good here, because you are asking it to describe data you have already verified rather than to reach a conclusion.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Using only the unmatched table above, write a short note for
+the file. Group the items into: timing differences, likely
+missing entries, and items needing investigation. For each
+group give the count, the total value, and one sentence on
+what needs to happen next. Plain professional English, no
+bullet point jargon.</div>
+<span class="eyebrow">Check this</span>
+<p>Read the note against the exception table line by line. Copilot will occasionally state a total that does not match its own table, and a reviewer will spot it before you do.</p>
+<div class="input"><b>Your input:</b> one real, de-identified reconciliation with a handful of genuine exceptions in it, ideally including one that turned out to be an error rather than timing. A worked example built on a real mess is worth more than any explanation, and it is the single asset that would most improve this module.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Ask AI to describe what you verified. Do not ask it to conclude what you have not.</p>
+</div>
+
+<!-- ================= MODULE 3 ================= -->
+<div class="mod" id="m3"><h3>Module 3 &middot; Month-end close</h3>
+<p>3 lessons &middot; roughly 44 minutes. From a checklist nobody maintains to a close that explains itself.</p></div>
+
+<div class="lesson">
+<h4>3.1 Building a close checklist Copilot can drive</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Turn the close that currently lives in one person's head into a written checklist, and use Copilot to keep it moving.</p>
+<span class="eyebrow">The idea</span>
+<p>Most closes run on institutional memory. That is a risk in itself, and it also means AI cannot help, because there is nothing written down for it to work from. Writing the checklist is therefore the first real AI task, and Copilot is good at drafting it from what already exists.</p>
+<span class="eyebrow">Do this</span>
+<p>Point Copilot at last month's close folder and the Teams channel where the chasing happened:</p>
+<div class="prompt">From these files and this channel, reconstruct the steps we
+actually performed in last month's close, in order. For each
+step list who did it, what it depended on, and where it got
+stuck. Mark any step that appears to have been done twice or
+skipped.</div>
+<p class="small">Reconstructing the real process is far more useful than drafting an ideal one, because the real one is what your team will recognise.</p>
+<span class="eyebrow">Check this</span>
+<p>Show the reconstructed list to whoever runs the close. Their corrections are the most valuable part of the exercise, and they take five minutes.</p>
+<span class="eyebrow">Takeaway</span>
+<p>You cannot automate a process you have never written down.</p>
+</div>
+
+<div class="lesson">
+<h4>3.2 Accruals, prepayments and the supporting workings</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Draft recurring journals and their supporting workings faster, with the calculation visible rather than hidden.</p>
+<span class="eyebrow">The idea</span>
+<p>An accrual is a small calculation plus a paper trail. The calculation is easy; the trail is what takes the time and what an auditor asks for. Copilot can produce both, provided you insist on seeing the working rather than the answer.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">From the attached invoice schedule, calculate the accrual
+required at 31 August for services received but not yet
+invoiced. Show the calculation for each supplier as a separate
+row: supplier, period covered, daily rate, days accrued, amount.
+Then give the total. Do not round until the total.</div>
+<span class="eyebrow">Check this</span>
+<p>Recalculate two rows by hand, one large and one small. The small one matters: rounding and part-period errors hide in immaterial lines and then repeat every month.</p>
+<span class="eyebrow">Watch out</span>
+<p>Copilot will fill a gap with a plausible assumption rather than telling you the data was missing. If a supplier's period is unclear, it may simply assume a full month. Ask it explicitly to list any assumption it made, then check that list.</p>
+<div class="prompt">List every assumption you made and every field you inferred
+rather than read directly from the data.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Always ask what it assumed. The answer is rarely nothing.</p>
+</div>
+
+<div class="lesson">
+<h4>3.3 Flux analysis: explaining every movement worth explaining</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Produce a month-on-month movement analysis with draft explanations, ready for you to confirm or correct.</p>
+<span class="eyebrow">The idea</span>
+<p>Flux analysis is repetitive, and it is where a close either becomes insightful or becomes a formality. Copilot can identify every movement above a threshold and propose a reason from the underlying detail. You confirm the reasons, which is the part that requires knowing the business.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Compare this month's trial balance with last month's. List
+every account where the movement is greater than 10 percent
+or 5,000 dollars, whichever is smaller. For each, give the
+movement in dollars and percent, and propose the most likely
+explanation based on the transactions in that account. Mark
+each explanation as confirmed or unconfirmed. Everything you
+propose is unconfirmed.</div>
+<span class="eyebrow">Check this</span>
+<p>Work down the unconfirmed column and convert each one to confirmed, corrected or unknown. The unknowns are your real work, and there are usually fewer than you expect.</p>
+<div class="red"><b>Red line 4.</b> Situations where there is no clear audit trail or where you cannot explain how the conclusion was reached. If an explanation reaches the board and nobody can say where it came from, it should not have been in the pack.</div>
+<div class="quiz">
+<p><b>Knowledge check, end of Module 3.</b> Copilot proposes that a 40,000 dollar rise in professional fees was "due to increased advisory activity". What do you do?</p>
+<p>A. Include it, it is plausible<br>
+B. Delete it, AI cannot explain movements<br>
+<b>C. Open the account, find the actual invoices, and either confirm it or write the real reason</b></p>
+<p class="a">Answer: C. It is a starting hypothesis, not a finding. Plausible and true are different things, and the board cannot tell them apart.</p>
+</div>
+</div>
+<!-- ================= MODULE 4 ================= -->
+<div class="mod" id="m4"><h3>Module 4 &middot; FP&amp;A</h3>
+<p>3 lessons &middot; roughly 45 minutes. Where the work stops being mechanical and judgement starts to matter.</p></div>
+
+<div class="lesson">
+<h4>4.1 Turning last year's actuals into a first-cut budget</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Produce a defensible first-cut budget in an afternoon instead of a fortnight, with every driver stated.</p>
+<span class="eyebrow">The idea</span>
+<p>A first-cut budget is mostly arithmetic applied to assumptions. The arithmetic is Copilot's job. The assumptions are yours, and the discipline is refusing to let them be invented. So you supply the drivers explicitly rather than asking for a budget.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Build a 12 month budget from the actuals in this sheet, using
+exactly these drivers and no others:
+- revenue grows 6 percent on prior year, spread on the same
+  seasonal pattern as last year
+- salaries rise 3.5 percent from 1 July
+- all other costs rise with revenue except rent and insurance,
+  which are fixed
+Show each line as prior year, driver applied, budget. If any
+line does not fit these rules, list it separately rather than
+guessing.</div>
+<p class="small">"List it separately rather than guessing" is the most useful sentence in this course. It converts silent invention into a visible question.</p>
+<span class="eyebrow">Check this</span>
+<p>Check the total, then check the seasonality. A model that hits the right annual number with the wrong shape will pass a glance and fail the first cash-flow conversation.</p>
+<div class="input"><b>Your input:</b> the drivers a typical client of yours actually uses. I have written generic ones. Real drivers, even from one anonymised client, would make this lesson unmistakably expert rather than merely competent.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Give it your assumptions. Never let it choose them.</p>
+</div>
+
+<div class="lesson">
+<h4>4.2 Scenarios and sensitivities without breaking the model</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Build best, base and downside cases from one model, and explain what actually drives the difference.</p>
+<span class="eyebrow">The idea</span>
+<p>Boards do not want a number, they want a range and the reason for it. Copilot is quick at generating variants, and the risk is that you end up with three spreadsheets nobody can reconcile. The rule is one model, one set of switchable assumptions, three outputs.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Using the budget on this sheet, build three scenarios that
+change only the assumptions block, never the formulas:
+- base: as built
+- downside: revenue growth 0 percent, debtor days up by 15
+- upside: revenue growth 12 percent, headcount up by two from
+  January
+For each, show revenue, EBITDA and closing cash. Then tell me
+which single assumption moves closing cash the most.</div>
+<span class="eyebrow">Check this</span>
+<p>Confirm the base scenario still reproduces your original budget exactly. If it does not, a formula was changed somewhere and every scenario is now unreliable.</p>
+<span class="eyebrow">Watch out</span>
+<p>Copilot may hard-code a value where a formula belonged. The model keeps working and quietly stops responding to the driver. Spot-check that changing one assumption actually moves the outputs.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Change assumptions, never formulas. Then prove the base case still ties.</p>
+</div>
+
+<div class="lesson">
+<h4>4.3 Variance commentary in your CFO's voice</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Draft variance commentary that sounds like your organisation and survives review.</p>
+<span class="eyebrow">The idea</span>
+<p>Commentary is where AI writing is most obvious and most irritating, because the default output is padded and hedged. The fix is to give it a real sample of your own previous commentary and instruct it to match, then to be specific about what a good explanation contains.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Here is our commentary from the last two months. Match its
+length, tone and level of detail exactly. Using the variance
+table below, draft this month's commentary. Rules: name the
+driver, quantify it, say whether it is timing or permanent,
+and state what we are doing about it. No adjectives that do
+not carry information. Anything you cannot support from the
+table, leave as [TO CONFIRM].</div>
+<span class="eyebrow">Check this</span>
+<p>Search the draft for [TO CONFIRM] and resolve every one. If there are none at all, be suspicious rather than pleased.</p>
+<div class="red"><b>Red line 1.</b> Final decisions that require professional judgement, accountability or sign-off. Commentary is not neutral description. It tells the board where to look, and that framing is your professional judgement, not the tool's.</div>
+</div>
+
+<!-- ================= MODULE 5 ================= -->
+<div class="mod" id="m5"><h3>Module 5 &middot; The board pack and management pack</h3>
+<p>3 lessons &middot; roughly 41 minutes. The most visible thing finance produces, and the most time-consuming.</p></div>
+
+<div class="lesson">
+<h4>5.1 From numbers to a narrative the board will read</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Decide what belongs in the pack before you build any of it.</p>
+<span class="eyebrow">The idea</span>
+<p>Most board packs are long because nobody decided what to leave out. The discipline is to write the three things the board must take away first, then build only what supports them. Copilot helps by drafting candidate messages from the numbers, which you then cut.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">From the management accounts and the variance commentary
+attached, propose the five most decision-relevant messages for
+a board, ranked. For each: the message in one sentence, the
+evidence behind it, and the decision or action it should prompt.
+Exclude anything that is interesting but does not require a
+board-level decision.</div>
+<span class="eyebrow">Check this</span>
+<p>Ask whether anything in the top five would surprise the chair. If nothing would, the pack is describing rather than informing, and it is worth another pass.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Decide the message first. The pack is evidence for it, not a substitute.</p>
+</div>
+
+<div class="lesson">
+<h4>5.2 Building the pack in Word and PowerPoint</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Turn agreed messages plus supporting schedules into a formatted pack, without retyping anything.</p>
+<span class="eyebrow">The idea</span>
+<p>This is the one part of the job where Copilot's convenience features genuinely shine: converting a document into a deck, carrying a house template through, and rewriting the same content for two audiences. It is also where errors are introduced silently, because numbers get retyped into slides.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Turn this board paper into a 10 slide deck using our template.
+One message per slide as the headline. Put supporting numbers
+in the slide body, and move all detailed schedules to an
+appendix. Do not re-type any figure: reference the source
+table so I can check each one.</div>
+<span class="eyebrow">Check this</span>
+<p>Take the six most important figures on the slides and tie each back to the source schedule. Six is usually enough to establish whether the conversion was faithful.</p>
+<span class="eyebrow">Watch out</span>
+<p>A number transcribed into a slide has left its audit trail behind. Wherever the tool allows a live link to the source, use it.</p>
+<div class="input"><b>Your input:</b> a board or management pack structure you would stand behind, even just the contents page. Every firm has a house style and yours will carry authority. I will build the walkthrough around your structure rather than a generic one.</div>
+</div>
+
+<div class="lesson">
+<h4>5.3 Anticipating the questions the board will ask</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Walk into the meeting having already prepared for the three hardest questions.</p>
+<span class="eyebrow">The idea</span>
+<p>This is the highest-value ten minutes in the whole course, and almost nobody does it. Ask Copilot to read your own pack adversarially, as a sceptical director would. It is good at this precisely because it has no loyalty to the work.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">You are a non-executive director with a finance background,
+reading this pack for the first time. List the ten questions
+you would ask, hardest first. For each, note whether the pack
+already answers it, answers it partially, or does not answer
+it at all.</div>
+<span class="eyebrow">Check this</span>
+<p>Anything marked "does not answer" is either a gap in the pack or a question you need a response ready for. Both are useful; neither is comfortable.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Let AI attack your work before the board does.</p>
+<div class="quiz">
+<p><b>Knowledge check, end of Module 5.</b> Copilot builds your deck and one slide shows EBITDA 40,000 dollars higher than the management accounts. Most likely cause?</p>
+<p>A. The board pack is correct and the accounts are wrong<br>
+<b>B. A figure was transcribed or a subtotal was recalculated during conversion</b><br>
+C. Rounding</p>
+<p class="a">Answer: B. Conversion between formats is where numbers drift. This is why you tie the key figures back to source every time.</p>
+</div>
+</div>
+
+<!-- ================= MODULE 6 ================= -->
+<div class="mod" id="m6"><h3>Module 6 &middot; The real-time dashboard</h3>
+<p>2 lessons &middot; roughly 29 minutes. The one that changes how the rest of the business sees finance.</p></div>
+
+<div class="lesson">
+<h4>6.1 Designing a dashboard around the decisions it serves</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Choose the six or seven measures that belong on a dashboard, and defend leaving the rest off.</p>
+<span class="eyebrow">The idea</span>
+<p>Dashboards fail for one reason: they are built from what is easy to measure rather than from what someone will decide. Start with the decision, then the measure, then the data. Copilot is a good sounding board for this because it will happily challenge a metric that serves no decision.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Our operations manager needs to decide weekly on stock
+purchasing and casual rostering. Propose the smallest set of
+measures that supports exactly those two decisions. For each,
+say what action a change in it should trigger. Then list the
+measures we currently report that do not support either
+decision.</div>
+<span class="eyebrow">Check this</span>
+<p>For each proposed measure, name the person who will act on it. Any measure without a name attached comes off the dashboard.</p>
+<span class="eyebrow">Takeaway</span>
+<p>A measure nobody acts on is decoration.</p>
+</div>
+
+<div class="lesson">
+<h4>6.2 Building it, and keeping it refreshing on its own</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Build a working dashboard that updates without anyone rebuilding it each month.</p>
+<span class="eyebrow">The idea</span>
+<p>The difference between a dashboard and a report is that nobody touches a dashboard between refreshes. That means the data has to arrive in a consistent shape every period, which is a discipline question more than a technical one.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Build a summary sheet from the transactions table with these
+measures: [your list from 6.1]. Use formulas that reference the
+whole table so new rows are picked up automatically. Do not
+paste any values. Then tell me exactly what would break if next
+month's export has an extra column or renamed headers.</div>
+<p class="small">That last question is the important one. Knowing the failure mode in advance is what stops a dashboard quietly going stale.</p>
+<span class="eyebrow">Check this</span>
+<p>Add three fake rows to the source table and confirm every measure moves. Then delete them.</p>
+<div class="red"><b>Red line 5.</b> Fully automating high-risk decisions without appropriate human oversight. A dashboard that refreshes itself is fine. A dashboard that triggers a payment, a credit decision or a lodgement without a person in the loop is not.</div>
+</div>
+
+<!-- ================= MODULE 7 ================= -->
+<div class="mod" id="m7"><h3>Module 7 &middot; Getting it right every time</h3>
+<p>1 lesson &middot; roughly 15 minutes. Pulls the whole course into one page the learner keeps.</p></div>
+
+<div class="lesson">
+<h4>7.1 Verification, source trails and the pre-send checklist</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Apply one checklist to any AI-assisted finance output before it leaves your desk, and know what to keep on file.</p>
+<span class="eyebrow">The idea</span>
+<p>Across five very different jobs, the same four habits kept appearing: shape the data first, state the assumptions explicitly, verify a sample by hand, and record what the tool did. That is the whole course in one line, and this lesson turns it into a checklist the learner downloads.</p>
+<span class="eyebrow">The pre-send checklist</span>
+<ol>
+  <li>Can I explain how this number was produced, without opening the tool?</li>
+  <li>Have I verified at least one item by hand, including one small one?</li>
+  <li>Did I ask what it assumed, and did I check that list?</li>
+  <li>Does anything here require professional judgement or sign-off that I have not personally given?</li>
+  <li>If someone asks in six months where this came from, is the trail on the file?</li>
+</ol>
+<div class="au"><b>The Australian frame.</b> The National AI Plan's direction is adoption with appropriate safeguards rather than avoidance. That is precisely what this checklist is: it lets a finance team use these tools on real client work while keeping the explainability and human accountability their professional obligations already demand. The plan describes the destination; the checklist is how a finance team gets there on a Tuesday.</div>
+<div class="input"><b>Your input:</b> the checklist above is mine. Please edit it in your own words, and add anything you would refuse to sign off without. Your version becomes the downloadable asset carrying your name, so it should sound like you rather than like me.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Copilot drafts. You verify. The file shows who decided.</p>
+</div>
+
+<h2 id="quiz">Final quiz, sample questions</h2>
+<p>Ten questions, 80 percent to pass, unlimited attempts, and passing unlocks the certificate in this subject. Three samples so you can judge the level.</p>
+<div class="quiz">
+<p><b>Q1.</b> You ask Copilot to accrue for services received but not invoiced. It returns a total with no working. What is the correct next step?</p>
+<p>A. Post it, the total is what matters<br>
+<b>B. Ask it to show the calculation per supplier, then recalculate two rows yourself</b><br>
+C. Post it and note in the file that Copilot prepared it</p>
+<p class="a">Answer: B. C is worse than A, because it records reliance without establishing it was reasonable.</p>
+</div>
+<div class="quiz">
+<p><b>Q2.</b> A client emails a spreadsheet containing individuals' salary details and asks for a summary. Your firm has Microsoft 365 Copilot. What is defensible?</p>
+<p>A. Paste it into a free public chatbot, it is faster<br>
+<b>B. Work on it in the firm's own Microsoft 365 environment, where the file already sits under existing permissions</b><br>
+C. Refuse, salary data can never be processed with AI</p>
+<p class="a">Answer: B. C sounds cautious but is wrong, and a rule that strict just drives people to option A quietly.</p>
+</div>
+<div class="quiz">
+<p><b>Q3.</b> Your dashboard refreshes automatically. Which of these should NOT be automated end to end?</p>
+<p>A. Recalculating debtor days each morning<br>
+<b>B. Releasing supplier payments when the cash measure passes a threshold</b><br>
+C. Emailing the operations manager when stock cover falls below two weeks</p>
+<p class="a">Answer: B. A and C inform a person. B replaces one.</p>
+</div>
+
+<h2 id="next">What I need from you</h2>
+<p>Four things, in the order they would help most. None of them requires you to write a lesson.</p>
+<ol>
+  <li><b>A yes or a correction on the structure.</b> Reorganising by job rather than by application is the biggest decision in this draft, and everything else follows from it.</li>
+  <li><b>One real de-identified reconciliation</b> with genuine exceptions, ideally including one real error. This single file would lift Module 2 more than anything else I can do alone.</li>
+  <li><b>Your version of the pre-send checklist</b> in lesson 7.1, and your real budget drivers for 4.1.</li>
+  <li><b>The Copilot licence tier</b> your target firms have, so the screenshots match what they can click.</li>
+</ol>
+<p>Once the structure is agreed I will build these 18 lessons into the Academy with the knowledge checks and the final quiz, then apply the same job-first treatment to the other three courses. The Academy already shows the new module structure, so you can click through it before deciding.</p>
+
+<footer><div>Empathetic AI Academy &middot; Course 1 full draft, internal, not published. Prepared for Angela. Companion to the <a href="./">course design framework</a>.</div></footer>
+</main>
+</body>
+</html>

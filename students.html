@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Course 5 - AI for university students - draft - Empathetic AI Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2563EB; --ink:#0f172a; --body:#334155; --muted:#64748b;
+  --line:#e5e7eb; --bg:#ffffff; --soft:#f8fafc;
+  --c5:#10B981;
+  --input:#b45309; --inputbg:#fffbeb; --inputborder:#fcd34d;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--body);background:var(--bg);line-height:1.65;font-size:16px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+header.top{background:linear-gradient(180deg,#f0fdf4, #ffffff);border-bottom:1px solid var(--line);padding:46px 0 34px}
+.badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#047857;background:#ecfdf5;border:1px solid #a7f3d0;padding:6px 12px;border-radius:999px;margin-bottom:16px}
+h1{font-size:30px;line-height:1.2;color:var(--ink);font-weight:800;margin:0 0 10px}
+.lede{font-size:17px;color:var(--muted);max-width:640px}
+h2{font-size:24px;color:var(--ink);font-weight:800;margin:52px 0 6px;padding-top:14px}
+h3{font-size:19px;color:var(--ink);font-weight:700;margin:30px 0 6px}
+h4{font-size:16px;color:var(--ink);font-weight:700;margin:20px 0 4px}
+p{margin:10px 0}
+ul,ol{margin:10px 0;padding-left:22px}
+li{margin:5px 0}
+a{color:var(--blue)}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.card{border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:18px 0;background:#fff;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.rule{height:1px;background:var(--line);border:0;margin:14px 0}
+.pill{display:inline-block;font-size:12.5px;font-weight:600;padding:4px 11px;border-radius:999px;margin:3px 6px 3px 0}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--muted);margin:8px 0 4px}
+.meta b{color:var(--ink);font-weight:600}
+.input{background:var(--inputbg);border:1px solid var(--inputborder);border-left:4px solid var(--input);border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#7c4a06}
+.input b{color:var(--input)}
+.prompt{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;background:#0f172a;color:#e2e8f0;border-radius:10px;padding:14px 16px;margin:12px 0;white-space:pre-wrap;line-height:1.55}
+.quiz{background:#f1f5f9;border-radius:10px;padding:14px 16px;margin:12px 0;font-size:14.5px}
+.quiz .a{color:#047857;font-weight:600}
+.toc{columns:2;column-gap:28px;font-size:15px;margin:14px 0}
+.toc a{display:block;padding:4px 0;text-decoration:none;color:var(--body)}
+.toc a:hover{color:var(--blue)}
+.small{font-size:13.5px;color:var(--muted)}
+.red{background:#fef2f2;border:1px solid #fecaca;border-left:4px solid #dc2626;border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#7f1d1d}
+.red b{color:#b91c1c}
+.au{background:#eff6ff;border:1px solid #bfdbfe;border-left:4px solid #2563EB;border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#1e3a8a}
+.au b{color:#1d4ed8}
+.int{background:#f5f3ff;border:1px solid #ddd6fe;border-left:4px solid #7c3aed;border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#4c1d95}
+.int b{color:#6d28d9}
+.lesson{border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:16px 0;background:#fff}
+.lesson h4{margin-top:0;font-size:17px}
+.lesson .eyebrow{display:block;margin-top:14px}
+.mod{background:#f0fdf4;border-radius:12px;padding:16px 20px;margin:34px 0 8px;border:1px solid #bbf7d0}
+.mod h3{margin:0;font-size:20px}
+.mod p{margin:6px 0 0;font-size:14.5px;color:#047857}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:14px 0}
+th{text-align:left;background:var(--ink);color:#fff;padding:9px 12px;font-weight:600;font-size:13px}
+td{padding:9px 12px;border-top:1px solid var(--line);vertical-align:top}
+footer{border-top:1px solid var(--line);margin-top:50px;padding:26px 0 60px;color:var(--muted);font-size:14px}
+@media(max-width:640px){.toc{columns:1}h1{font-size:25px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <span class="badge">Empathetic AI Academy &middot; Course 5 &middot; First draft</span>
+  <h1>AI for university students</h1>
+  <p class="lede">Your idea, drafted so you can react to something concrete rather than an outline. One subject, nine lessons plus a capstone, about three learning hours. I also think the commercial model matters more than the content here, so that is the first section rather than an afterthought.</p>
+</div></header>
+
+<main class="wrap">
+
+<div class="card">
+  <span class="eyebrow">On this page</span>
+  <div class="toc">
+    <a href="#read">My honest read on the idea</a>
+    <a href="#money">How it should be sold</a>
+    <a href="#promise">The promise, and one change I would make</a>
+    <a href="#m1">Module 1 &middot; What is actually changing</a>
+    <a href="#m2">Module 2 &middot; Using it without getting in trouble</a>
+    <a href="#m3">Module 3 &middot; Doing real work with it</a>
+    <a href="#m4">Module 4 &middot; Getting hired</a>
+    <a href="#capstone">Capstone and certificate</a>
+    <a href="#next">What I need from you</a>
+  </div>
+  <p style="margin:14px 0 0" class="small">Companion to the <a href="./copilot-for-finance.html">Course 1 draft</a>, <a href="./courses-2-3-4.html">Courses 2, 3 and 4</a> and the <a href="./">design framework</a>.</p>
+</div>
+
+<h2 id="read">My honest read on the idea</h2>
+
+<p>Short answer: yes, do it, and I think it is the strongest new idea you have raised. But I would change one thing about how it is positioned and one thing about how it is sold, and both changes matter more than anything in the lesson list.</p>
+
+<p>Why it is a good idea. Three reasons, in order of how much they are worth to you.</p>
+
+<ol>
+<li><b>It is a funnel into the business you already have.</b> The students in a commerce or accounting society this year are graduates in a Big Four or mid-tier firm next year, and those firms are exactly who buys Courses 1 to 4. A certificate with your name on it sitting on a few hundred LinkedIn profiles is cheaper and better targeted than any advertising you could buy.</li>
+<li><b>It gives your sales team a reason to call a university.</b> Careers services and student societies are hard to sell to and easy to give to. A free, genuinely good course is a door opener into an institution that also buys staff training.</li>
+<li><b>The demand is real and it is not being met well.</b> Students are anxious about this and they are asking for it. What they are being offered is mostly generic.</li>
+</ol>
+
+<p>Now the part I would not be doing my job if I left out.</p>
+
+<div class="red"><b>The honest risk.</b> This is the most crowded free-content market in education right now. Students in Australia already have free AI training available to them from several directions. Western Sydney University is fully funding up to a thousand of its own students through a Microsoft AI skills bootcamp this year. TAFE NSW, TAFE SA and the CSIRO national AI centre all run free introductory AI courses. Most universities give every enrolled student a LinkedIn Learning or Coursera licence through the library, and both are full of free AI content with certificates attached. If our course is a general introduction to AI, it is competing with all of that at a price of zero and losing, because they have distribution and we do not.</div>
+
+<p>So the course cannot be an introduction to AI. It has to be the thing none of those free courses are, which is the reason I would draft it the way I have below: <b>professional context, an assessed artifact, and academic integrity taken seriously</b>. A student who finishes a Coursera AI course has a badge. A student who finishes ours should walk out with a piece of work they can put in front of an interviewer, and a defensible answer to the question they are now being asked in graduate interviews.</p>
+
+<h2 id="money">How it should be sold</h2>
+
+<p>This is the change I feel most strongly about. Do not sell it to students. Students are the worst customer in the market: no money, infinite free alternatives, and no ability to sign anything. Sell it to the people whose job it is to reach them, and let the students have it free.</p>
+
+<div class="card">
+<table>
+  <tr><th>Model</th><th>Who pays</th><th>What it is worth</th><th>My view</th></tr>
+  <tr><td><b>A. Sponsored, free to students</b></td><td>A firm, or Empathetic AI as marketing spend</td><td>Brand, candidate pipeline, funnel into paid courses</td><td><b>Launch with this.</b> Costs you nothing but the build, which is done once.</td></tr>
+  <tr><td><b>B. Institutional licence</b></td><td>The careers service, business school or society</td><td>Roughly A$15 to A$25 per student at 200 seats and up, or a flat annual figure</td><td><b>This is the repeatable revenue.</b> Universities have budget lines for employability. Societies have sponsorship budgets funded by professional firms.</td></tr>
+  <tr><td><b>C. Direct to student</b></td><td>The student</td><td>A$49 + GST, realistically</td><td>Keep it as the long tail so the page has a price on it, but do not build the plan around it.</td></tr>
+</table>
+</div>
+
+<p>There is a fourth option worth naming because it is how student societies are actually funded. Their sponsors are professional services firms, and those firms sponsor in order to meet students. If one of your existing clients sponsors the course, they pay, the students get it free, the society gets an event, and the firm gets its logo in front of the exact cohort it recruits from. Everyone in that chain is happy and you are the only one who had to build anything.</p>
+
+<div class="input"><b>I need you here.</b> Which model do you want to lead with? My recommendation is A for the first two or three universities to get the case study and the testimonials, then B as the standard offer from there. If you already have a client who recruits graduates, tell me and I will draft the sponsorship one pager as well.</div>
+
+<h2 id="promise">The promise, and one change I would make</h2>
+
+<p>Your working title is "AI for university students, get ready with AI, for future of work". The instinct behind it is right. I would change the emphasis, for a reason that is factual rather than stylistic.</p>
+
+<p>The fear framing is "AI is going to take your job". It is the most motivating headline available and it is also the one most likely to be challenged, because the Australian graduate data does not currently support it. Graduate job postings in Australia stabilised in early 2026 and are sitting above pre-pandemic levels. What is actually happening is narrower and more useful: <b>entry-level roles are being reshaped rather than removed</b>, they are more competitive, and AI capability has moved from a differentiator to a baseline expectation. Employers are no longer impressed that you can use it. They assume it, and they are now testing whether you can use it with judgement.</p>
+
+<p>That reframe is better for us in three ways. It is defensible if an academic or a careers adviser pushes back, which matters when you are an OpenAI Select Partner and your name is on it. It is just as urgent to an anxious student, because "the thing you are worried about is already assumed of you" lands harder than a prediction about the future. And it points at a course we can actually deliver, since we cannot teach anyone to be un-replaceable but we can absolutely teach them to work the way employers now expect.</p>
+
+<div class="card">
+<span class="eyebrow">Title options</span>
+<p style="margin-top:8px"><b>1. Graduate Ready with AI</b> <span class="small">subtitle: using AI the way employers now expect. My preference. Short, positive, works on a poster and on a certificate.</span></p>
+<p><b>2. AI for Your First Job</b> <span class="small">more concrete, slightly narrower, excellent for a society event flyer.</span></p>
+<p><b>3. AI and the Future of Work: a student guide</b> <span class="small">closest to your original wording. Safe, and the most generic.</span></p>
+<div class="input"><b>Your call.</b> I have drafted it under option 1 but the content is identical whichever you pick, so this is a five minute change at any point.</div>
+</div>
+
+<div class="card">
+<span class="eyebrow">Course at a glance</span>
+<div class="meta" style="margin-top:10px">
+  <span><b>Level</b> Beginner, no prerequisites</span>
+  <span><b>Length</b> 3 learning hours</span>
+  <span><b>Structure</b> 4 modules, 9 lessons, 1 capstone</span>
+  <span><b>Assessment</b> Knowledge check per module, final quiz at 80%</span>
+  <span><b>Certificate</b> Yes, on capstone plus quiz</span>
+</div>
+<p class="small" style="margin-top:10px">Deliberately shorter than the professional courses. A student will not finish a five hour course between assignments, and a course nobody finishes generates no certificates and therefore no marketing.</p>
+</div>
+
+<!-- ================================================================= -->
+
+<div class="mod" id="m1"><h3>Module 1 &middot; What is actually changing about entry-level work</h3>
+<p>2 lessons &middot; 26 minutes. Setting the record straight before teaching anything, so the rest of the course is believed.</p></div>
+
+<div class="lesson">
+<h4>1.1 What employers now assume you can already do</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Describe the specific capabilities a graduate employer now takes for granted, and honestly assess which of them you have.</p>
+<span class="eyebrow">The idea</span>
+<p>Two years ago, putting AI on a graduate application was a differentiator. It is not any more. The expectation has moved to everyday competence: knowing what the tools are good at, choosing the right one for a task, and applying judgement to what comes back. That last part is the whole ball game, and it is the part almost nobody is taught.</p>
+<p>The lesson opens with a self-assessment against six things employers actually ask about, so the student knows which lessons they need most. It is short, it is honest, and it is the reason they keep going.</p>
+<span class="eyebrow">Do this</span>
+<p>Rate yourself one to five on each of the six. Keep the sheet. You will rate yourself again at the end of the course and the difference is what goes on your application.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Nobody is impressed that you use AI. They are interested in whether you know when not to.</p>
+</div>
+
+<div class="lesson">
+<h4>1.2 The tasks being reshaped, and the ones that are not</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Explain, with examples from your own field, which parts of a junior role are changing and which are not, without either panicking or dismissing it.</p>
+<span class="eyebrow">The idea</span>
+<p>The honest picture is more specific than the headlines. The first draft, the first pass of research, the first cut of a data set, the routine summary: these are being compressed. What is not being compressed is the part where somebody has to be accountable for the answer. Junior roles historically bought their learning by doing the compressed part. That is the real change, and it means the way you demonstrate value in your first year is different from the way your manager demonstrated it in theirs.</p>
+<p>Worked through in three fields so it is not an accounting lecture: a graduate accountant, a marketing coordinator, a junior analyst.</p>
+<div class="au"><b>Australian context.</b> Graduate hiring in Australia has held up better than the commentary suggests, with postings stabilising in early 2026 above pre-pandemic levels. The pressure is on how competitive entry-level roles have become, not on whether they exist. We say this plainly, with the source, because a student who has been told the sky is falling and then finds out otherwise stops trusting everything else we said.</div>
+<div class="quiz">
+<p><b>Knowledge check, end of Module 1.</b> An employer asks at interview how you use AI in your work. Which answer is strongest?</p>
+<p>A. "I use ChatGPT for everything, it saves me hours"<br>
+B. "I don't use it, I prefer to do my own work"<br>
+<b>C. "I use it for first drafts and structuring data, I check every figure against the source, and here is a piece of work where I did that"</b></p>
+<p class="a">Answer: C. A sounds uncritical, B sounds unemployable in 2026, C is the only one that shows judgement and has evidence attached.</p>
+</div>
+</div>
+
+<!-- ================================================================= -->
+
+<div class="mod" id="m2"><h3>Module 2 &middot; Using it without getting into trouble</h3>
+<p>2 lessons &middot; 30 minutes. The module that makes universities willing to distribute this.</p></div>
+
+<p class="small">This module is the strategic centre of the course. Every free AI course aimed at students skips academic integrity because it is awkward. A careers service or a business school will not put its name near a course that teaches students to use AI without addressing it. Putting it second, before the practical work, is what turns this from something a university tolerates into something a university actively hands out.</p>
+
+<div class="lesson">
+<h4>2.1 Where the line is, and how to stay on the right side of it</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Find and read your own institution's AI policy, and correctly classify a set of realistic scenarios as allowed, allowed with disclosure, or not allowed.</p>
+<span class="eyebrow">The idea</span>
+<p>There is no single national rule, and this is the source of most of the trouble. Policy is set per institution and often per unit, and the same action can be fine in one subject and a breach in the next. So the skill is not memorising a rule, it is knowing how to check, and building the habit of checking before the assignment rather than after the allegation.</p>
+<p>The lesson gives a decision path and eight scenarios to sort. Deliberately uncomfortable ones are included: using it to explain a concept you did not understand, using it to fix your grammar as a second-language speaker, using it to generate the structure and then writing the content yourself, using it to write code for an assignment that is assessed on the code.</p>
+<div class="int"><b>Integrity note.</b> The course never tells a student what their institution allows, because we do not know and it changes. It teaches them to find the policy, read the specific wording about generative AI, and ask the unit coordinator in writing when it is ambiguous. A written question before submission is a complete defence. A verbal assurance is not.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Check per unit, not per university, and check before you submit rather than after.</p>
+</div>
+
+<div class="lesson">
+<h4>2.2 Keeping a record of what you actually did</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Keep a lightweight process record that can substantiate your own work if it is ever questioned.</p>
+<span class="eyebrow">The idea</span>
+<p>Detection tools produce false positives, and students who did nothing wrong get accused. The defence is not an argument, it is evidence: version history, notes, the prompts used, the drafts in between. This takes about two minutes per assignment and it is the single most practical thing in the course.</p>
+<p>It also transfers directly to work, which is the point. Being able to show how you arrived at an answer is the same skill in an audit file, a client deliverable and an assignment. We say so explicitly, because it is one of the moments where a student realises the course is about their career rather than their marks.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">For this assignment, keep one file with:
+  - what you asked the tool, verbatim
+  - what it gave back, unedited
+  - what you changed and why
+  - which sources you checked yourself
+Write it as you go. Reconstructing it later is not evidence.</div>
+<div class="quiz">
+<p><b>Knowledge check, end of Module 2.</b> You are accused of using AI on an assignment where you did not. What helps you most?</p>
+<p>A. Insisting you did not use it<br>
+B. Running the text through a detector yourself to prove it<br>
+<b>C. Your document version history, notes and drafts showing the work developing over time</b></p>
+<p class="a">Answer: C. Detectors are unreliable in both directions, so a detector result proves nothing. A visible trail of how the work developed is very hard to argue with.</p>
+</div>
+</div>
+
+<!-- ================================================================= -->
+
+<div class="mod" id="m3"><h3>Module 3 &middot; Doing real work with it</h3>
+<p>3 lessons &middot; 47 minutes. The practical core, taught on university work but written to transfer straight into a job.</p></div>
+
+<div class="lesson">
+<h4>3.1 Reading fast, and being able to cite what you read</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Get reliable answers out of a long reading, a report or a case study without relying on a summary you cannot verify.</p>
+<span class="eyebrow">The idea</span>
+<p>Same discipline as Course 2, pitched at a reading list rather than a lease. Do not ask for a summary. Ask narrow questions one at a time, require a quote and a page number for each, and require it to say NOT ADDRESSED rather than reason from general knowledge. Then open the source at the quoted page. The failure mode this catches is the one that gets students into real trouble: a confident, well-written, entirely invented citation.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Using only this document, answer each question separately.
+For each, quote the exact sentence you relied on and give the
+page number. If the document does not answer it, write NOT
+ADDRESSED. Do not use any outside knowledge.
+</div>
+<div class="red"><b>The one that ends careers before they start.</b> Fabricated references are the most common way students get caught, and they are the most damaging because they look deliberate. Every citation goes in your work only after you have opened it. No exceptions, no matter how real it looks.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Narrow questions, quoted sources, and you open the source yourself.</p>
+</div>
+
+<div class="lesson">
+<h4>3.2 Turning a mess into something structured</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Take unstructured material and get a clean, checkable table out of it, with the gaps visible rather than filled in.</p>
+<span class="eyebrow">The idea</span>
+<p>This is the single most employable skill in the course, because it is what a lot of junior work actually is. Notes into a comparison table, a set of job ads into a requirements matrix, survey responses into themes, a pile of readings into a literature grid. The technique is the same one taught to professionals: specify the columns, forbid inference, and require MISSING where the source is silent. The value is entirely in that last instruction, because a table with no gaps in it is usually a table with invented cells.</p>
+<span class="eyebrow">Do this</span>
+<p>Build a comparison table from four sources on the same topic. Then check three cells at random against the originals. Most students find at least one problem, and that discovery is the lesson.</p>
+<span class="eyebrow">Takeaway</span>
+<p>A tidy output is not a correct one. Make the gaps visible and check a sample.</p>
+</div>
+
+<div class="lesson">
+<h4>3.3 Writing that sounds like you, not like a model</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Use AI in your writing process without producing text that reads as generated.</p>
+<span class="eyebrow">The idea</span>
+<p>There is a recognisable register that these tools default to, and both markers and recruiters have learned to spot it. The fix is not a clever prompt, it is a change in where the tool sits in the process: use it to interrogate your draft rather than to produce it. Ask it what your argument is missing, where a claim is unsupported, which paragraph is doing no work. Then you write. The output is your writing, improved, rather than its writing, lightly edited.</p>
+<span class="eyebrow">Do this</span>
+<div class="prompt">Here is my draft. Do not rewrite it. Tell me:
+  1. what claim is unsupported
+  2. which paragraph could be deleted with no loss
+  3. what a sceptical reader would object to
+Then stop. I will do the rewriting.
+</div>
+<div class="quiz">
+<p><b>Knowledge check, end of Module 3.</b> Your AI-assisted literature table has a value in every cell across twelve sources. What should you suspect?</p>
+<p>A. It did a thorough job<br>
+<b>B. Some cells were inferred rather than found, because real sources usually do not all address the same points</b><br>
+C. The sources are unusually consistent</p>
+<p class="a">Answer: B. Completeness is a warning sign. Real material has gaps, and a table without any is usually a table that filled them for you.</p>
+</div>
+</div>
+
+<!-- ================================================================= -->
+
+<div class="mod" id="m4"><h3>Module 4 &middot; Getting hired</h3>
+<p>2 lessons &middot; 27 minutes. The reason they enrolled, placed where it pays off rather than where it hooks.</p></div>
+
+<div class="lesson">
+<h4>4.1 Your application, without the AI smell</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Use AI properly in a job application, and avoid the specific patterns that get applications binned.</p>
+<span class="eyebrow">The idea</span>
+<p>Graduate recruiters read thousands of these and they can spot a generated cover letter in a sentence. Worse, several large employers now treat an obviously generated application as a screening signal in itself. So the useful skills are narrow and specific: extracting the real requirements out of a job ad, checking your own experience against them honestly, preparing evidence for each, and pressure testing your draft. Not generating the letter.</p>
+<span class="eyebrow">Do this</span>
+<p>Take a real graduate job ad. Have the tool pull out every stated and implied requirement into a table. Fill in your own evidence column yourself. The empty rows are your interview preparation and, more usefully, your plan for the next six months.</p>
+<div class="red"><b>Do not have it write claims about you.</b> Anything it invents, you will be asked about, and you will not be able to answer. Every line in your application has to be something you can be interrogated on for ten minutes.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Use it on the job ad, not on your own letter.</p>
+</div>
+
+<div class="lesson">
+<h4>4.2 The AI question in the interview</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Answer the AI question with a specific example and evidence, instead of an opinion.</p>
+<span class="eyebrow">The idea</span>
+<p>The question is now close to standard in graduate interviews, in some form. Almost every candidate answers with an attitude, either enthusiasm or caution. The candidate who answers with a worked example and a verification habit is immediately in a different category, and this course has spent three hours making sure they have one to describe.</p>
+<p>The structure taught: the task, the tool and why that one, what you did not trust it with, how you checked, and what you would do differently. Five sentences. Practised out loud.</p>
+<div class="input"><b>I need you here.</b> If you or Tristan have sat on the other side of graduate interviews and know what actually gets asked, one paragraph from either of you turns this lesson from good to unarguable. It is the lesson students will quote when they recommend the course.</div>
+<div class="quiz">
+<p><b>Knowledge check, end of Module 4.</b> Why does a specific worked example beat a strong opinion here?</p>
+<p>A. Interviewers prefer detail<br>
+<b>B. Everyone has an opinion, so an opinion does not distinguish you. An example with a verification step demonstrates judgement, which is what is actually being tested</b><br>
+C. It takes longer, showing enthusiasm</p>
+<p class="a">Answer: B.</p>
+</div>
+</div>
+
+<!-- ================================================================= -->
+
+<h2 id="capstone">Capstone and certificate</h2>
+
+<div class="card">
+<h3 style="margin-top:0">The capstone</h3>
+<p>One piece of real work, done with AI, submitted with a process note. It has to be their own material: an assignment they are doing anyway, a comparison table for a subject, an application for a role they actually want.</p>
+<p>They submit two things. The artifact itself, and a process note of about two hundred words covering what they used, what they did not trust it with, how they verified it, and what they would do differently. The note is the assessed part.</p>
+<p>The point is that they leave holding something. Not a badge, a piece of work with a defensible account of how it was made, which is exactly what module 4.2 taught them to describe in an interview. This is the difference between our course and the free ones, and it is worth the extra build.</p>
+<div class="input"><b>Decision needed.</b> Do you want the capstone reviewed by a human, or self-assessed against a rubric? Human review is far more valuable and creates a real relationship with the student, but it does not scale past a few hundred and someone has to do it. My recommendation is a rubric for everyone, with human review offered to society partners as the reason to pay for model B.</div>
+</div>
+
+<div class="card">
+<h3 style="margin-top:0">Certificate</h3>
+<p>Final quiz across all four modules, eighty percent to pass, same standard as the professional courses. Certificate issued on the quiz plus a submitted capstone.</p>
+<p>The wording on it matters more than usual, because it will sit on LinkedIn profiles and it is our advertising. I would keep it factual and specific rather than grand. Something like: <i>has completed Graduate Ready with AI, a three hour applied course covering professional use of AI tools, verification, academic integrity and workplace application, assessed by examination and submitted work.</i></p>
+<p class="small">Note the phrase "assessed by examination and submitted work". That single clause is what separates it from every free completion badge, and it is the reason a recruiter would give it a second of attention.</p>
+</div>
+
+<h2 id="next">What I need from you</h2>
+
+<div class="card">
+<ol>
+<li><b>Go or no go</b>, and which title.</li>
+<li><b>Commercial model.</b> A, B or C from the table above. This changes the enrolment flow we build, so it is the one that blocks development rather than content.</li>
+<li><b>Do you have a client who recruits graduates?</b> If so I will draft the sponsorship one pager alongside the course.</li>
+<li><b>Which universities or societies are you targeting first?</b> It changes the examples. A course going to a commerce society should use commerce examples throughout.</li>
+<li><b>The interview paragraph</b> from you or Tristan for lesson 4.2.</li>
+<li><b>Capstone review model.</b> Rubric, human, or rubric with human review as a paid tier.</li>
+</ol>
+<p class="small" style="margin:14px 0 0">None of this blocks me starting. Say go and I will build it while the answers come in, since only points 2 and 6 affect the code.</p>
+</div>
+
+<div class="input" style="margin-top:20px"><b>One more thought, take it or leave it.</b> If this works at one university it works at forty, and the second one costs nothing to serve. That is the only part of this business that scales without more of your time or Tristan's. Worth being slightly ambitious with, in my opinion.</div>
+
+</main>
+
+<footer><div class="wrap">
+  Empathetic AI Academy &middot; Course 5 draft &middot; Internal working document, not published.
+</div></footer>
+
+</body>
+</html>

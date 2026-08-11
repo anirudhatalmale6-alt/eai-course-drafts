@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Free course - AI Foundations - full draft - Empathetic AI Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2563EB; --ink:#0f172a; --body:#334155; --muted:#64748b;
+  --line:#e5e7eb; --bg:#ffffff; --soft:#f8fafc; --free:#3B82F6;
+  --input:#b45309; --inputbg:#fffbeb; --inputborder:#fcd34d;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--body);background:var(--bg);line-height:1.65;font-size:16px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+header.top{background:linear-gradient(180deg,#eff6ff, #ffffff);border-bottom:1px solid var(--line);padding:46px 0 34px}
+.badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);background:#eff6ff;border:1px solid #dbeafe;padding:6px 12px;border-radius:999px;margin-bottom:16px}
+h1{font-size:30px;line-height:1.2;color:var(--ink);font-weight:800;margin:0 0 10px}
+.lede{font-size:17px;color:var(--muted);max-width:640px}
+h2{font-size:24px;color:var(--ink);font-weight:800;margin:52px 0 6px;padding-top:14px}
+h3{font-size:19px;color:var(--ink);font-weight:700;margin:30px 0 6px}
+h4{font-size:16px;color:var(--ink);font-weight:700;margin:20px 0 4px}
+p{margin:10px 0}
+ul,ol{margin:10px 0;padding-left:22px}
+li{margin:5px 0}
+a{color:var(--blue)}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.card{border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:18px 0;background:#fff;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--muted);margin:8px 0 4px}
+.meta b{color:var(--ink);font-weight:600}
+.input{background:var(--inputbg);border:1px solid var(--inputborder);border-left:4px solid var(--input);border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#7c4a06}
+.input b{color:var(--input)}
+.prompt{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;background:#0f172a;color:#e2e8f0;border-radius:10px;padding:14px 16px;margin:12px 0;white-space:pre-wrap;line-height:1.55}
+.quiz{background:#f1f5f9;border-radius:10px;padding:14px 16px;margin:12px 0;font-size:14.5px}
+.quiz .a{color:#047857;font-weight:600}
+.toc{columns:2;column-gap:28px;font-size:15px;margin:14px 0}
+.toc a{display:block;padding:4px 0;text-decoration:none;color:var(--body)}
+.toc a:hover{color:var(--blue)}
+.small{font-size:13.5px;color:var(--muted)}
+.red{background:#fef2f2;border:1px solid #fecaca;border-left:4px solid #dc2626;border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#7f1d1d}
+.red b{color:#b91c1c}
+.au{background:#eff6ff;border:1px solid #bfdbfe;border-left:4px solid #2563EB;border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#1e3a8a}
+.au b{color:#1d4ed8}
+.lesson{border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:16px 0;background:#fff}
+.lesson h4{margin-top:0;font-size:17px}
+.lesson .eyebrow{display:block;margin-top:14px}
+.mod{background:#eff6ff;border-radius:12px;padding:16px 20px;margin:34px 0 8px;border:1px solid #bfdbfe}
+.mod h3{margin:0;font-size:20px}
+.mod p{margin:6px 0 0;font-size:14.5px;color:#1e40af}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:14px 0}
+th{text-align:left;background:var(--ink);color:#fff;padding:9px 12px;font-weight:600;font-size:13px}
+td{padding:9px 12px;border-top:1px solid var(--line);vertical-align:top}
+footer{border-top:1px solid var(--line);margin-top:50px;padding:26px 0 60px;color:var(--muted);font-size:14px}
+@media(max-width:640px){.toc{columns:1}h1{font-size:25px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <span class="badge">Empathetic AI Academy &middot; Free course &middot; Full draft</span>
+  <h1>AI Foundations for Finance</h1>
+  <p class="lede">The last one to be written, and the first one anyone will touch. Six lessons, eighty minutes, free. Every lesson is drafted. Gold boxes are the three places I need you, red boxes are your five limits, taught here for the first time rather than saved for the governance course.</p>
+</div></header>
+
+<main class="wrap">
+
+<div class="card">
+  <span class="eyebrow">On this page</span>
+  <div class="toc">
+    <a href="#job">What this course is for</a>
+    <a href="#glance">The course at a glance</a>
+    <a href="#m1">Module 1 &middot; What this actually is</a>
+    <a href="#m2">Module 2 &middot; Using it well</a>
+    <a href="#m3">Module 3 &middot; Doing it yourself</a>
+    <a href="#cert">The certificate question</a>
+    <a href="#next">What I need from you</a>
+  </div>
+  <p style="margin:14px 0 0" class="small">The paid courses: <a href="./copilot-for-finance.html">Course 1 &middot; Copilot</a> and <a href="./courses-2-3-4.html">Courses 2, 3 and 4</a>.</p>
+</div>
+
+<h2 id="job">What this course is for</h2>
+
+<p>A free course at the top of a funnel has one job that everybody agrees on and one that most people get wrong.</p>
+
+<p>The obvious job is to be genuinely useful. If someone gives us eighty minutes and leaves with nothing, we have not made a sale, we have spent trust. Given how much of your positioning rests on being trusted, a thin free course is the most expensive thing we could publish.</p>
+
+<p>The job people get wrong is the second one, which is to make the paid courses feel necessary. The instinct is to hold something back. That is exactly backwards, and it reads as withholding, which is the one impression we cannot afford. What actually works is to teach one thing properly and let the learner run into the edge of it themselves. By lesson five they will have interrogated a real document and got a real answer, and they will also have noticed that they do not yet know how to do that reliably, at scale, or in a way they could defend to a partner. That gap is real, we do not have to manufacture it, and Courses 1 to 4 are the honest answer to it.</p>
+
+<p>So this course teaches one complete, useful skill and is straight about what it has not covered.</p>
+
+<div class="card">
+<span class="eyebrow">The one idea it exists to install</span>
+<p style="margin-top:8px">Reading and drafting used to be the bottleneck in professional work. They are not any more. <b>Verification is the bottleneck now.</b> Which means the valuable skill is not writing clever prompts, it is knowing how to check an answer quickly enough that speed is still worth having.</p>
+<p class="small">Everything else in the Academy hangs off that sentence. It is worth planting it in the free course rather than saving it, because it is the idea that makes someone think Empathetic AI is worth paying.</p>
+</div>
+
+<h2 id="glance">The course at a glance</h2>
+<div class="card">
+<div class="meta">
+  <span><b>Level</b> Beginner, no experience</span>
+  <span><b>Length</b> 2 learning hours</span>
+  <span><b>Structure</b> 3 modules, 6 lessons</span>
+  <span><b>Price</b> Free</span>
+</div>
+<table>
+  <tr><th>#</th><th>Lesson</th><th>Time</th><th>What it does for us</th></tr>
+  <tr><td>1.1</td><td>Why AI matters for finance professionals</td><td>10m</td><td>Installs the verification idea</td></tr>
+  <tr><td>1.2</td><td>Copilot vs ChatGPT vs OpenAI Enterprise</td><td>14m</td><td>Answers the question everyone actually arrives with</td></tr>
+  <tr><td>2.1</td><td>What AI is good at, and what to avoid</td><td>12m</td><td>One test they will remember</td></tr>
+  <tr><td>2.2</td><td>Responsible use and professional judgement</td><td>15m</td><td>Your five red lines, first contact</td></tr>
+  <tr><td>3.1</td><td>Your first practical workflow</td><td>16m</td><td>The one they tell a colleague about</td></tr>
+  <tr><td>3.2</td><td>Where to go next</td><td>13m</td><td>Honest diagnostic, not a pitch</td></tr>
+</table>
+<p class="small">Lesson titles are the ones already in the catalog, so nothing downstream breaks. I have kept them.</p>
+</div>
+
+<div class="input"><b>Small naming question.</b> The course is called AI Foundations <em>for Finance</em>. Since you told me the audience is finance and business people, and this is the widest part of the funnel, the words "for Finance" turn away the business half at the exact point where we can least afford it. The paid courses can be specific because someone has already decided we are for them. I would drop the qualifier here and call it <b>AI Foundations</b>, keeping every finance example exactly as drafted. Your call, it is a one line change and the slug stays the same either way.</div>
+
+<!-- ================================================================= -->
+
+<div class="mod" id="m1"><h3>Module 1 &middot; What this actually is</h3>
+<p>2 lessons &middot; 24 minutes. Clearing away the two things that stop people starting: not knowing what changed, and not knowing which tool they are supposed to be using.</p></div>
+
+<div class="lesson">
+<h4>1.1 Why AI matters for finance professionals</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Say precisely which parts of your own work this changes, and which parts it does not, without either overclaiming or dismissing it.</p>
+<span class="eyebrow">The idea</span>
+<p>Most explanations of AI for professionals are either breathless or defensive, and neither helps you decide what to do on Monday. The useful version is narrower.</p>
+<p>For most of your career the slow parts of knowledge work were reading and drafting. Reading the fifty page agreement. Writing the first version of the memo. Getting the messy data into a shape you could look at. Those were the bottleneck, and seniority was partly a measure of how fast you could get through them.</p>
+<p>Those three things are now fast. Not perfect, but fast. Which means the bottleneck has moved, and it has moved to <b>checking</b>. The constraint on your work is no longer how quickly you can produce a draft, it is how quickly you can satisfy yourself that a draft is right.</p>
+<p>That single relocation explains almost everything else. It explains why the professionals getting value are not the ones with the cleverest prompts, but the ones with the fastest verification habits. It explains why AI helps most on tasks where checking is cheap, like finding a clause you can then go and read, and helps least on tasks where checking is expensive, like a judgement call with no source to check against. And it explains why the rest of this Academy spends so much time on how to check things.</p>
+<span class="eyebrow">Do this</span>
+<p>Write down three tasks from last week. For each, answer one question: if a competent colleague handed me this finished, how long would it take me to satisfy myself it was right? The tasks with short answers are where you should start. The ones with long answers are where you should be careful.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Drafting got cheap. Checking did not. Start where checking is cheap.</p>
+</div>
+
+<div class="lesson">
+<h4>1.2 Copilot vs ChatGPT vs OpenAI Enterprise</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Work out which tool your firm should be using, and understand why the difference matters more for confidentiality than for capability.</p>
+<span class="eyebrow">The idea</span>
+<p>People assume these are competing products that do different things well. Mostly they are not. The underlying capability is similar enough that for the work in this course you would barely notice. What differs, and it differs enormously, is <b>what the tool can see and where your data goes</b>.</p>
+<div class="card">
+<table>
+  <tr><th>&nbsp;</th><th>What it can see</th><th>Where your data goes</th><th>Best when</th></tr>
+  <tr><td><b>Microsoft 365 Copilot</b></td><td>Your own files, email, Teams and calendar inside your tenant</td><td>Stays within your Microsoft tenant, under your existing controls</td><td>Your firm already runs Microsoft 365 and the work involves your own documents</td></tr>
+  <tr><td><b>ChatGPT, personal account</b></td><td>Only what you paste into it</td><td>Outside your firm entirely</td><td>Nothing confidential. Genuinely useful for learning and for public information</td></tr>
+  <tr><td><b>ChatGPT Enterprise / OpenAI Enterprise</b></td><td>Only what you give it, plus anything you deliberately connect</td><td>Under a commercial agreement, with your data not used for training</td><td>You want the strongest general capability with contractual data controls</td></tr>
+</table>
+</div>
+<p>The thing worth understanding is that Copilot's advantage and its risk are the same fact. It can see your files, which is why it is useful without you pasting anything, and it is also why "it can see your files" is a sentence your risk committee will want to talk about. Access inside a tenant follows existing permissions, which means Copilot inherits whatever your permissions already were, including the ones nobody has reviewed since 2019.</p>
+<div class="au"><b>The Australian reality.</b> Most Australian accounting and finance firms already pay for Microsoft 365, so Copilot is usually the cheapest tool to adopt because the procurement conversation has already happened. That is why Course 1 is built on it. It is not a claim that Copilot is the best tool, it is a recognition of what is actually on your desk.</div>
+<div class="input"><b>I need you here.</b> One paragraph on what your clients actually run. If most of them are on Microsoft 365 with Copilot licences, I will say so plainly and this lesson gets much more confident. If a meaningful number are on OpenAI Enterprise, the emphasis shifts and so does the ordering of the paid courses.</div>
+<div class="quiz">
+<p><b>Knowledge check, end of Module 1.</b> A colleague pastes a client's draft contract into a personal ChatGPT account to ask what the termination clause means. What is the problem?</p>
+<p>A. ChatGPT is not capable enough for legal text<br>
+<b>B. Confidential client material has left the firm's control, and it does not matter how good the answer was</b><br>
+C. They should have asked a lawyer</p>
+<p class="a">Answer: B. The capability is not the issue. The tool is the issue, and the same question inside the firm's own Copilot or an enterprise agreement would have been fine.</p>
+</div>
+</div>
+
+<!-- ================================================================= -->
+
+<div class="mod" id="m2"><h3>Module 2 &middot; Using it well</h3>
+<p>2 lessons &middot; 27 minutes. One test that predicts when it will fail, then the five situations where it should not be used at all.</p></div>
+
+<div class="lesson">
+<h4>2.1 What AI is good at, and what to avoid</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Predict, before you ask, whether you are likely to get a reliable answer.</p>
+<span class="eyebrow">The idea</span>
+<p>There is a long list of strengths and weaknesses you could memorise. There is also one question that predicts most of it:</p>
+<div class="card" style="border-left:4px solid var(--free)">
+<p style="margin:0"><b>Am I giving it the source, or asking it to remember?</b></p>
+</div>
+<p>Giving it the source means the answer is in the material you supplied: find the termination clause in this contract, turn these notes into a table, rewrite this paragraph for a client. These work well, and more importantly, when they fail you can see it, because the source is right there.</p>
+<p>Asking it to remember means the answer has to come from somewhere inside the model: what is the current threshold for X, what did that standard say, what is the case law on Y. These fail differently and much worse. Not with an error message, but with a fluent, well-structured, entirely plausible answer that is wrong. It will invent a section number with the same confidence it quotes a real one.</p>
+<p>This is also why the arithmetic question comes up. It is not that these tools cannot calculate, it is that a language model producing a number is remembering what a number looks like rather than computing it. Give it a spreadsheet and ask it to work in the spreadsheet, and you are back in the first category.</p>
+<span class="eyebrow">Do this</span>
+<p>Ask the same question twice. Once with the document attached, once without. Compare. The version without the source will often look better written, which is precisely the trap.</p>
+<span class="eyebrow">Takeaway</span>
+<p>Supply the source. When you cannot supply the source, treat the answer as a lead to check, never as a finding.</p>
+</div>
+
+<div class="lesson">
+<h4>2.2 Responsible use and professional judgement</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Recognise the five situations where AI should not be making the running, and explain to a colleague why.</p>
+<span class="eyebrow">The idea</span>
+<p>Everything up to here has been about getting good output. This lesson is about the cases where good output is not the point, because the problem is not accuracy, it is accountability. These five are Empathetic AI's position and they are taught in every course rather than collected at the end of one.</p>
+<div class="red"><b>1. Final decisions needing professional judgement.</b> Decisions that require judgement, accountability or sign-off, especially where the consequences are material. The tool can inform the decision. It cannot be the one who made it, because it cannot be the one who answers for it.</div>
+<div class="red"><b>2. Acting on output without checking the source.</b> Making decisions purely on AI output without checking the underlying data, assumptions, calculations and sources. This is the one that catches capable people, because the output is well written and reads as though it has already been checked.</div>
+<div class="red"><b>3. Sensitive data in public AI tools.</b> Highly sensitive or confidential financial information in public tools without appropriate data controls. Covered in lesson 1.2, and worth repeating because it is the mistake with the fastest consequences.</div>
+<div class="red"><b>4. No audit trail, no explanation.</b> Situations where there is no clear audit trail, or where you could not explain how the conclusion was reached. If your only answer to "how did you get this" is "the AI said so", you do not have a finding, you have a guess in a nice font.</div>
+<div class="red"><b>5. Automating high-risk decisions end to end.</b> Fully automating decisions involving compliance, tax, audit, credit, investment or regulatory obligations without human oversight. Automation is fine. Automation with nobody accountable in the loop is not.</div>
+<p>Notice what these five have in common. Not one of them is about the technology being bad. Every one is about where responsibility sits. That is why they do not change as the tools improve, and it is why they are worth learning now rather than waiting to see how good the next model is.</p>
+<span class="eyebrow">Do this</span>
+<p>Take the three tasks you wrote down in lesson 1.1. Mark any that touch one of the five. Those are not off limits, but they are the ones where the checking step is not optional.</p>
+<div class="quiz">
+<p><b>Knowledge check, end of Module 2.</b> Which of these is closest to a red line?</p>
+<p>A. Using AI to draft a client email that you then edit and send<br>
+B. Using AI to summarise a public accounting standard so you know where to look<br>
+<b>C. Using AI to decide which invoices to approve for payment, automatically</b></p>
+<p class="a">Answer: C. Red line 5. A and B are ordinary use with a human in the loop. C removes the person who would have been accountable.</p>
+</div>
+</div>
+
+<!-- ================================================================= -->
+
+<div class="mod" id="m3"><h3>Module 3 &middot; Doing it yourself</h3>
+<p>2 lessons &middot; 29 minutes. One complete workflow they run on their own material, then an honest account of what this course did not teach them.</p></div>
+
+<div class="lesson">
+<h4>3.1 Your first practical workflow</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Get reliable, checkable answers out of a long document in about ten minutes, on your own material, today.</p>
+<span class="eyebrow">The idea</span>
+<p>This is the lesson people will tell a colleague about, so it has to work on the first try. We pick document interrogation because it is the highest value thing a beginner can do safely: the source is supplied, so we are on the right side of lesson 2.1, and checking is cheap, so we are on the right side of lesson 1.1.</p>
+<p>The instinct is to ask for a summary. Do not. A summary flattens exactly the exceptions and carve-outs that matter, and you have no way of seeing what it left out. Ask narrow questions instead, one at a time, and make it show you where each answer came from.</p>
+<span class="eyebrow">Do this</span>
+<p>Take a real document you have to get through. A contract, a policy, a tender, a long report. Attach it and use this:</p>
+<div class="prompt">Using only this document, answer each question separately.
+For each one, quote the exact sentence you relied on and give
+the page or clause number. If the document does not answer a
+question, write NOT ADDRESSED rather than reasoning from
+general knowledge. Do not summarise.
+
+1. [your question]
+2. [your question]
+3. [your question]
+4. [your question]
+</div>
+<p>The four questions should be the four you would otherwise have had to find by hand. That is the whole trick: you are not asking it to understand the document, you are asking it to find things in it.</p>
+<span class="eyebrow">Check this</span>
+<p>Open the document at each quoted page number and read the sentence. This takes two minutes and it is not optional. It catches the failure that matters most here, which is a real sentence attached to the wrong location, or a quoted line that has been subtly tidied up.</p>
+<p>Do this on three documents and you will have a calibrated sense of how much to trust it, which is worth more than any amount of being told.</p>
+<div class="red"><b>Red line 2, in practice.</b> The NOT ADDRESSED instruction is doing real work. Without it, a question the document does not answer gets answered anyway, from general knowledge, in the same confident voice as the ones it found. That is the single most likely way this goes wrong for you.</div>
+<span class="eyebrow">Takeaway</span>
+<p>Narrow questions, quoted sources, and you open the document yourself. Never a summary you cannot audit.</p>
+</div>
+
+<div class="lesson">
+<h4>3.2 Where to go next</h4>
+<span class="eyebrow">What you will be able to do</span>
+<p>Decide what to learn next based on your own situation, including deciding that you have enough for now.</p>
+<span class="eyebrow">The idea</span>
+<p>This lesson is written as a diagnostic, not a pitch, and I would keep it that way even though it is the conversion lesson. Someone who has just spent eighty minutes with us can tell the difference immediately, and the version that respects them converts better anyway.</p>
+<p>Start with what this course deliberately did not cover, said plainly:</p>
+<ul>
+<li>How to get the <b>same</b> answer reliably, rather than a good answer once.</li>
+<li>How to do this at volume, on twenty documents rather than one.</li>
+<li>How to work inside your own files and email rather than uploading things.</li>
+<li>What to do when you want a process to run without you.</li>
+<li>How to put a policy around any of this so a firm can use it rather than an individual.</li>
+</ul>
+<p>Then the routing, which is genuinely about their situation:</p>
+<div class="card">
+<table>
+  <tr><th>If you are...</th><th>Go to</th><th>Because</th></tr>
+  <tr><td>Sitting in a Microsoft 365 firm, wanting to speed up your actual job</td><td>Course 1, Copilot for Finance</td><td>Built on the tool already on your desk, around five real finance jobs</td></tr>
+  <tr><td>Finding the answers good but inconsistent, and wanting to defend them</td><td>Course 2, Prompting</td><td>This is the verification skill from lesson 1.1, taught properly</td></tr>
+  <tr><td>Doing the same task repeatedly and wondering if it could run itself</td><td>Course 3, AI Agents</td><td>What should run without you, and what must not</td></tr>
+  <tr><td>Responsible for other people using this</td><td>Course 4, Governance</td><td>The policy, the register and the evidence trail</td></tr>
+  <tr><td>Wanting to be taught it live, with your own work in front of you</td><td>The live workshop</td><td>Half a day, hands on, with Tristan</td></tr>
+</table>
+</div>
+<p>And an honest fifth option: if what you needed was to stop feeling behind, you have that now, and you can leave. People who are told they can leave come back.</p>
+<span class="eyebrow">Takeaway</span>
+<p>You can now get checkable answers out of a long document. The next question is whether you need that to be reliable, repeatable, or governed.</p>
+</div>
+
+<!-- ================================================================= -->
+
+<h2 id="cert">The certificate question</h2>
+
+<div class="card">
+<p>Every course in the Academy currently issues a certificate, and that includes this one. I think that is worth a moment, because it touches the trust point you raised about the affiliate programme.</p>
+<p>If a free eighty minute course produces the same artifact as a A$590 assessed course, the A$590 certificate quietly loses meaning. Nobody complains, it just stops being worth anything on a LinkedIn profile, and the paid ones are the ones you need to be worth something.</p>
+<p>My recommendation is that this course issues a certificate, because it is a genuine reason to finish and it spreads, but a <b>visibly different one</b>. The paid certificates carry the line "assessed by examination and submitted work". This one should not, because it is not true here. Same design, same pride in sharing it, different and honest wording.</p>
+<div class="input"><b>Your call.</b> Options are: same certificate as the paid courses, a differentiated one as above, or no certificate on the free course at all. I recommend the middle one. It is about twenty minutes of work whichever you pick.</div>
+</div>
+
+<h2 id="next">What I need from you</h2>
+
+<div class="card">
+<ol>
+<li><b>The naming question</b> in the box near the top: keep "for Finance" or drop it.</li>
+<li><b>One paragraph on what your clients actually run</b>, for lesson 1.2. This is the one that most improves the course.</li>
+<li><b>The certificate decision</b> above.</li>
+</ol>
+<p class="small" style="margin:14px 0 0">None of these block anything. The course is drafted and ready to build whenever the four paid ones are.</p>
+</div>
+
+</main>
+
+<footer><div class="wrap">
+  Empathetic AI Academy &middot; Free course draft &middot; Internal working document, not published.
+</div></footer>
+
+</body>
+</html>

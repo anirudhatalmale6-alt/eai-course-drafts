@@ -36,6 +36,8 @@ a{color:var(--blue)}
 .pill{display:inline-block;font-size:12.5px;font-weight:600;padding:4px 11px;border-radius:999px;margin:3px 6px 3px 0}
 .meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--muted);margin:8px 0 4px}
 .meta b{color:var(--ink);font-weight:600}
+.done{background:#f0fdf4;border:1px solid #bbf7d0;border-left:4px solid #16a34a;border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#14532d}
+.done b{color:#166534}
 .input{background:var(--inputbg);border:1px solid var(--inputborder);border-left:4px solid var(--input);border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#7c4a06}
 .input b{color:var(--input)}
 .demo{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0;font-size:14.5px}
@@ -128,7 +130,11 @@ td{padding:9px 12px;border-top:1px solid var(--line);vertical-align:top}
 <h2 id="au">The Australian frame</h2>
 <p>You asked for the National AI Plan as the Australian context. It suits this course well, because it is about adoption with guardrails rather than prohibition, which is exactly the posture a finance team needs to hear from a training provider.</p>
 <p>I use it in two places rather than sprinkling it everywhere. Once in Module 1, to set the national direction and explain why a firm needs a position rather than a ban. Once in Module 7, to connect the plan's language about safe and responsible adoption to the concrete habits the learner has just built: verification, source trails, human sign-off.</p>
-<div class="input"><b>Your input:</b> tell me how firmly you want to lean on the plan. Option A, light touch: two references, framed as national direction. Option B, foreground: a dedicated lesson mapping the plan's principles to a finance team's obligations, which is more distinctive but dates faster as the plan evolves. My recommendation is A for this course and B inside the Governance course, where it belongs more naturally.</div>
+<div class="done"><b>Decided, 17 August.</b> Option A, light touch. The National AI Plan
+states that Australia will not introduce mandatory guardrails for high-risk AI, on the basis that
+existing law already covers it. So there is no new obligation here to teach. It is referenced as
+national direction and the course teaches the duties an accountant already carries, which is where
+the real constraints live. Course 4 makes the same point at length.</div>
 
 <h2 id="glance">The course at a glance</h2>
 <div class="card">
@@ -180,7 +186,10 @@ and tell me which columns look like calculated fields.</div>
 <p>There is a meaningful difference between Microsoft 365 Copilot working inside your tenant on files you already have access to, and a free consumer chatbot you paste text into. In the first, the material stays inside your organisation's boundary and inherits your existing permissions. In the second, you have moved client data outside the firm. Most people cannot articulate this difference, which is why they either use AI recklessly or refuse to use it at all.</p>
 <span class="eyebrow">Do this</span>
 <p>Take the three files you touched most this week. For each, write one line: where it lives, who else can see it, and whether it contains anything you would not email to an external party. Keep the list. Module 7 turns it into a rule for your team.</p>
-<div class="input"><b>Your input:</b> which Copilot licence tier your target firms realistically have. The screenshots and the "can it see this" answer differ between Microsoft 365 Copilot and the free Copilot chat, and I want the examples to match what your buyers can actually click. If you are unsure, I will write it for Microsoft 365 Copilot and add a one-page note for firms on the free tier.</div>
+<div class="done"><b>Answered, 17 August.</b> Mixed: some firms hold paid Microsoft 365
+Copilot seats, some do not, and among those that do the feature level ranges from basic to
+enterprise. So the course does not assume a seat. Module 1 now opens with a licence check, and
+lessons give the chat-only route wherever the ribbon route would fail.</div>
 <span class="eyebrow">Watch out</span>
 <p>A file being inside your tenant does not make it appropriate to process. Permission and appropriateness are two different tests, and only one of them is technical.</p>
 <div class="red"><b>Red line 3.</b> Handling highly sensitive or confidential financial information in public AI tools without appropriate data controls. If you cannot say where the data goes, do not put it there.</div>

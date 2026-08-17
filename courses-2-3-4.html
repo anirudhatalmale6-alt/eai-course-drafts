@@ -36,6 +36,8 @@ a{color:var(--blue)}
 .pill{display:inline-block;font-size:12.5px;font-weight:600;padding:4px 11px;border-radius:999px;margin:3px 6px 3px 0}
 .meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--muted);margin:8px 0 4px}
 .meta b{color:var(--ink);font-weight:600}
+.done{background:#f0fdf4;border:1px solid #bbf7d0;border-left:4px solid #16a34a;border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#14532d}
+.done b{color:#166534}
 .input{background:var(--inputbg);border:1px solid var(--inputborder);border-left:4px solid var(--input);border-radius:8px;padding:12px 15px;margin:12px 0;font-size:14.5px;color:#7c4a06}
 .input b{color:var(--input)}
 .demo{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0;font-size:14.5px}
@@ -566,17 +568,40 @@ C. Refuse, approvals cannot be automated</p>
 </div>
 
 <div class="mod" id="c3m3"><h3>Module 3 &middot; Your first agent</h3>
-<p>3 lessons &middot; 52 minutes. Hands on in Copilot Studio.</p></div>
+<p>3 lessons &middot; 52 minutes. Built with Power Automate and Copilot, which your firm already has.</p></div>
+
+<div class="done"><b>Restructured, 17 August.</b> Angela's answer: most target firms do not have
+Copilot Studio, and among those that do, most would not know how to use it. So this module no
+longer opens in a product half the room cannot access. It is built on Power Automate plus Copilot,
+which comes with the Microsoft 365 subscriptions these firms already pay for. Copilot Studio is
+kept as an upgrade path at the end for the firms that do have it.</div>
 
 <div class="lesson">
-<h4>3.1 Copilot Studio: the parts you actually need</h4>
+<h4>3.1 Building an agent with what you already have</h4>
 <span class="eyebrow">What you will be able to do</span>
-<p>Navigate Copilot Studio confidently, ignoring the ninety percent you do not need.</p>
+<p>Assemble a working agent from Power Automate and Copilot, without buying anything.</p>
 <span class="eyebrow">The idea</span>
-<p>Copilot Studio does a great deal. For a finance agent you need four things: where the instructions live, where the knowledge sources are connected, where actions are defined, and where you test. Everything else can wait until you have built one.</p>
+<p>An agent is not a product you buy, it is four parts wired together: something that triggers it,
+something that reads and reasons, somewhere the rules live, and somewhere the trail is written.
+Copilot Studio bundles those four into one screen. Power Automate makes you assemble them
+yourself, which is slower to build and considerably better to learn on, because you can see every
+join. Nothing is hidden inside a product you are renting.</p>
+<p>This matters beyond convenience. When a partner asks how the thing decided something, you can
+point at the step. That is much harder to do with a tool that presents itself as a single box.</p>
 <span class="eyebrow">Do this</span>
-<p>Create an empty agent, connect one document you know well as a knowledge source, and ask it a question you can verify. Do not build anything real yet. This is orientation.</p>
-<div class="input"><b>Your input:</b> confirm your target firms have Copilot Studio access, since it is licensed separately from Microsoft 365 Copilot. If most do not, I will restructure this module around Power Automate plus Copilot, which more firms already have. This is the single biggest open question in Course 3 and it changes three lessons.</div>
+<p>Build a flow triggered by a file landing in a SharePoint or Teams folder. Have it pass the
+document to Copilot with a fixed instruction, write the result to a spreadsheet, and record what
+it did. Use a document you know well and check every field by hand the first time.</p>
+<span class="eyebrow">Watch out</span>
+<p>Power Automate will happily run on a schedule forever with nobody reading the output. Build the
+log before you build the automation, not after.</p>
+<span class="eyebrow">Takeaway</span>
+<p>You do not need a licence you do not have. You need a trigger, a reasoning step, written rules
+and a trail.</p>
+<div class="au"><b>If your firm does have Copilot Studio.</b> Everything in this module transfers
+directly. The four parts are the same parts, just assembled for you on one screen. Lesson 3.3
+closes with what changes and when the upgrade is worth it, so nobody who has paid for it is left
+out.</div>
 </div>
 
 <div class="lesson">
@@ -743,7 +768,10 @@ why you stopped if you stopped.</div>
 C. The threshold is set too low</p>
 <p class="a">Answer: B. It might be perfect. But an approval that never rejects anything is indistinguishable from no approval, and you cannot tell which you have without looking.</p>
 </div>
-<div class="input"><b>Your input for Course 3:</b> (1) whether target firms have Copilot Studio, which changes Module 3; (2) one real process with its genuine exceptions; (3) an anonymised chart of accounts plus two or three judgement-call coding rules; (4) the three controls you most often find missing.</div>
+<div class="input"><b>Your input for Course 3:</b> (1) one real process with its genuine
+exceptions; (2) an anonymised chart of accounts plus two or three judgement-call coding rules;
+(3) the three controls you most often find missing. <b>The Copilot Studio question is answered</b>
+and Module 3 has been rebuilt on Power Automate plus Copilot.</div>
 <!-- ================================================================= -->
 <!-- COURSE 4 -->
 <!-- ================================================================= -->
@@ -765,7 +793,16 @@ C. The threshold is set too low</p>
 <p>The most common governance mistake is waiting for a rule that names AI. Your existing obligations already cover it: confidentiality, competence, supervision, record keeping, privacy, and the duty to exercise professional judgement. None of them mention AI, and all of them apply to it. A tool that helps you breach an existing obligation is a problem today, not when a new act commences.</p>
 <span class="eyebrow">Do this</span>
 <p>List your firm's five most significant existing obligations. For each, write one sentence on how an AI tool could cause a breach. That list is the foundation for everything else in the course, and it is usually the moment the topic stops feeling abstract.</p>
-<div class="input"><b>Your input:</b> which specific obligations to name for your audience. Accountants, tax agents and financial advisers sit under different regimes and I do not want to blur them. Tell me your primary audience and the two or three standards or codes they answer to, and I will make this lesson concrete rather than general.</div>
+<div class="done"><b>Answered, 17 August.</b> The audience is CPAs and CAs, both in-house
+finance teams and accounting or tax practices. Financial planners are explicitly out of scope,
+which removes a whole separate regime and keeps this module sharp.
+<br><br>
+Three standards carry the course: <b>APES 110</b> for confidentiality and professional competence,
+the <b>Code of Professional Conduct under the Tax Agent Services Act</b> for taking reasonable
+care, and the <b>Privacy Act and the Australian Privacy Principles</b>, particularly cross-border
+disclosure. APES 110 Part 2 covers members in business and Part 3 members in public practice, so
+one code carries both halves of the audience and this module does not need splitting. What differs
+is whose data it is, a client's or an employer's, which is taught once and landed twice.</div>
 <span class="eyebrow">Takeaway</span>
 <p>Nothing is waiting for AI law. Your obligations already arrived.</p>
 </div>
@@ -779,7 +816,15 @@ C. The threshold is set too low</p>
 <span class="eyebrow">Do this</span>
 <p>Write your firm's one-paragraph position on AI, as you would say it to a client who asked. Not a policy yet, just a position. Most firms discover they do not have one, and that is the useful finding.</p>
 <div class="au"><b>Why this matters commercially.</b> Clients are starting to ask their accountants and advisers whether AI touched their work. A firm with a clear position answers confidently, and it becomes a mark of quality. A firm without one either overclaims or goes quiet, and both damage trust.</div>
-<div class="input"><b>Your input:</b> how strongly to lean on the plan, and whether to quote it directly. Government material dates as it evolves, so my instinct is to teach the principles and reference the plan rather than build the lesson on quotations that will need maintaining. Say if you would prefer it quoted more heavily.</div>
+<div class="done"><b>Decided, 17 August.</b> Light touch, and for a better reason than
+I first gave. The National AI Plan is short, and its position is that Australia will <b>not</b>
+introduce mandatory guardrails for high-risk AI, on the basis that existing law already covers it.
+<br><br>
+That is not a footnote, it is the spine of this course. There is no AI statute coming to tell an
+accountant what to do. The obligations that bite are the ones they already carry: APES 110, the
+tax agent code, the Privacy Act. So the plan gets referenced twice, as national direction, and the
+lesson teaches the existing duties rather than waiting for new ones. That framing also ages well,
+which quoting the plan would not.</div>
 </div>
 
 <div class="lesson">
@@ -861,7 +906,12 @@ C. Nobody's, there was no rule</p>
 <p>Six questions get you most of the way. Where is our data stored and processed. Is it used to train their models, and can we turn that off. Who at the vendor can access it. How long is it retained and can we delete it. What happens to our data if we leave. Can you tell us if there is a breach, and how quickly. A vendor who cannot answer these plainly has told you something.</p>
 <span class="eyebrow">Do this</span>
 <p>Send the six questions to a tool your firm already uses. The answers, or the silence, are the lesson.</p>
-<div class="input"><b>Your input:</b> anything you would add from your own vendor assessments, and whether you want the six framed against a specific standard your audience already recognises. Naming a familiar framework makes it feel like part of their existing world rather than a new one.</div>
+<div class="input"><b>Your input, now narrower:</b> anything you would add from your
+own vendor assessments. The framing question is settled: I will map these against the government's
+<b>Guidance for AI Adoption</b> and its six essential practices, which superseded the ten voluntary
+guardrails in October 2025. That is the most current Australian reference and it is the one a
+client's own advisers will recognise. I will confirm the wording is still current before it goes
+into the lesson rather than working from memory.</div>
 </div>
 
 <div class="lesson">
@@ -912,7 +962,20 @@ C. Nobody's, there was no rule</p>
 <p>Long policies are written to protect the firm and read by nobody. One page, six sections: what we believe, what is approved, what is prohibited, what always requires a human, what to do if something goes wrong, and who to ask. Prohibitions come with reasons, because a rule people understand survives contact with a deadline.</p>
 <span class="eyebrow">Do this</span>
 <p>Draft it from the template. The prohibited section writes itself from your five limits, which is why they were taught first.</p>
-<div class="input"><b>Your input:</b> this is the one place I genuinely cannot write for you. The policy template needs to be something you would put your name to and hand to a client. Send me your version or your edits to mine, and it becomes the flagship downloadable asset of the entire program, with your name on it.</div>
+<div class="done"><b>Decided, 17 August.</b> Angela's point: there is no standard AI policy
+template on the market, and we should teach a firm how to draft its own rather than hand out a
+document that pretends to be an authority. Agreed, and it is the safer product as well. A generic
+policy adopted verbatim is exactly the box-ticking that fails the first time it is tested.
+<br><br>
+So the asset is a <b>drafting guide</b>, not a template: the six decisions a firm has to make,
+what turns on each, and two or three wordings for each decision with the trade-offs stated. They
+leave with a policy they can explain, because they chose it. The skeleton is still provided so
+nobody starts from an empty page.
+<br><br>
+It is anchored to the government's <b>Guidance for AI Adoption</b> and its six essential
+practices, which as of October 2025 supersede the ten voluntary guardrails. That gives the guide
+standing without claiming to be a standard. Angela's remaining input is her edits to the six
+decisions and anything she would refuse to sign off without.</div>
 </div>
 
 <div class="lesson">
